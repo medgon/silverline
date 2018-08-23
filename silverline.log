@@ -1,0 +1,42 @@
+2018-08-22 22:51:50.954  INFO 10176 --- [main] c.d.silverline.SilverlineApplication     : Starting SilverlineApplication on DESKTOP-PUIKKAO with PID 10176 (C:\Users\gtx1070\git\silverline\target\classes started by gtx1070 in C:\Users\gtx1070\git\silverline)
+2018-08-22 22:51:50.957  INFO 10176 --- [main] c.d.silverline.SilverlineApplication     : No active profile set, falling back to default profiles: default
+2018-08-22 22:51:50.997  INFO 10176 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b419da: startup date [Wed Aug 22 22:51:50 EDT 2018]; root of context hierarchy
+2018-08-22 22:51:51.887  INFO 10176 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e56adac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-22 22:51:52.249  INFO 10176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-08-22 22:51:52.258  INFO 10176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-22 22:51:52.259  INFO 10176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-08-22 22:51:52.340  INFO 10176 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/silverline]    : Initializing Spring embedded WebApplicationContext
+2018-08-22 22:51:52.341  INFO 10176 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1347 ms
+2018-08-22 22:51:52.443  INFO 10176 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-22 22:51:52.445  INFO 10176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-22 22:51:52.446  INFO 10176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-22 22:51:52.446  INFO 10176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-22 22:51:52.446  INFO 10176 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-22 22:51:52.890  INFO 10176 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-22 22:51:52.900  INFO 10176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-22 22:51:52.973  INFO 10176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-08-22 22:51:52.975  INFO 10176 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-22 22:51:52.976  INFO 10176 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-08-22 22:51:53.014  INFO 10176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-22 22:51:53.126  INFO 10176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-22 22:51:53.168  INFO 10176 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2018-08-22 22:51:53.464  INFO 10176 --- [main] org.hibernate.search.engine.Version      : HSEARCH000034: Hibernate Search 5.6.4.Final
+2018-08-22 22:51:53.563  INFO 10176 --- [main] o.h.tool.hbm2ddl.SchemaValidator         : HHH000229: Running schema validator
+2018-08-22 22:51:53.677  INFO 10176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-22 22:51:53.720  INFO 10176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-08-22 22:51:53.725  INFO 10176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'getAsyncExecutor'
+2018-08-22 22:51:53.953  INFO 10176 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b419da: startup date [Wed Aug 22 22:51:50 EDT 2018]; root of context hierarchy
+2018-08-22 22:51:54.016  INFO 10176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-22 22:51:54.017  INFO 10176 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-22 22:51:54.046  INFO 10176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-22 22:51:54.046  INFO 10176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-22 22:51:54.079  INFO 10176 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-22 22:51:54.094  INFO 10176 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-08-22 22:51:54.299  INFO 10176 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-22 22:51:54.348  INFO 10176 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-08-22 22:51:54.351  INFO 10176 --- [main] c.d.silverline.SilverlineApplication     : Started SilverlineApplication in 3.656 seconds (JVM running for 4.45)
+2018-08-22 22:52:03.328  INFO 10176 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/silverline]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-22 22:52:03.328  INFO 10176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-22 22:52:03.342  INFO 10176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms

@@ -1,0 +1,63 @@
+/*
+body {
+    padding-top: 70px; Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes.
+} */
+
+	html, body {
+		margin: 0;
+		padding-top: 2em;
+		border: 0;
+		font: tahoma;
+		line-height: 1;
+		-webkit-text-size-adjust: none;
+	}
+
+	#header {
+		background: #000000;
+		color: rgba(255, 255, 255, 0.75);
+		cursor: default;
+		height: auto;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 120%;
+		z-index: 10001;
+		border-bottom: 10px solid;
+		border-bottom-color: #EEB211;
+	}
+
+	#header > h3 {
+		left: 1em;
+		line-height: inherit;
+		position: relative;
+		top: 0;
+		bottom: 2;
+		fone-weight: 600;
+		margin: 0;
+		font: inherit;
+	    display: block;
+	    font-size: 1.6em;
+	    -webkit-margin-before: 0.67em;
+	    -webkit-margin-after: 0.67em;
+	    -webkit-margin-start: 0px;
+	    -webkit-margin-end: 0px;
+
+	}
+	
+	#main-header{
+		border-bottom-color: #ff0000;
+	}
+.container{
+	padding-top: 30px;
+}
+
+img.logo{
+	max-width:175px;
+	max-height:150px;
+}
+
+.fa-envelop-o {
+  color: yellow;
+}
+
+
