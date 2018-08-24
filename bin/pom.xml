@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.dyheart</groupId>
+	<artifactId>silverline</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>silverline</name>
+	<description>Point of Sale system</description>
+
+	<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.10.RELEASE</version>
+  </parent>
+
+	<properties>
+	  <java.version>1.8</java.version>
+	  <com.fasterxml.version>2.9.0</com.fasterxml.version>
+  </properties>
+
+	<dependencies>
+		 <dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-java8</artifactId>
+		</dependency>
+		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		
+		<dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-web</artifactId>
+    	</dependency>
+    	
+    	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+    	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			  <scope>test</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.hibernate</groupId>
+		  <artifactId>hibernate-search-orm</artifactId>
+		  <version>5.6.4.Final</version>
+		</dependency>
+
+	    <dependency>
+	    	<groupId>org.hibernate</groupId>
+	    	<artifactId>hibernate-envers</artifactId>
+	    	<version>5.0.9.Final</version>
+	    </dependency>
+	    
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
+		<dependency>
+	  		<groupId>org.apache.commons</groupId>
+  			<artifactId>commons-lang3</artifactId>
+  			<version>3.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+			<dependency>
+    		<groupId>commons-beanutils</groupId>
+    		<artifactId>commons-beanutils</artifactId>
+    		<version>1.9.2</version>
+		</dependency>
+
+		
+  </dependencies>
+
+	 <build>
+    <plugins>
+        
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+		    <configuration>
+		        <executable>true</executable> <!-- this makes it a 'fully executable' jar file so we can run it as a linux service -->
+		    </configuration>
+        </plugin>
+
+    </plugins>     
+  </build>
+
+
+</project>

@@ -1,0 +1,700 @@
+/* **************************************************************************************/
+/* Footer */
+/* **************************************************************************************/
+footer.site-footer {
+  padding: 0;
+}
+
+#gt-footer {
+  clear: both;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+  background-color: #eeb221;
+  color: #6c5003;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+}
+/* line 21, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer .row {
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+  margin: 0 auto 0;
+  max-width: 1200px;
+}
+/* line 30, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-inner {
+  background: #eeb221;
+  overflow: hidden;
+}
+/* line 35, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-left {
+  float: left;
+}
+@media (max-width: 600px) {
+  /* line 35, sass/+partials/_theme/_gt-footer.scss */
+  #gt-footer #gt-footer-left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 44, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-left img {
+  padding: 10px;
+}
+/* line 49, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 {
+  height: 50px;
+}
+/* line 53, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1, #gt-footer #gt-footer-right-2 {
+  float: right;
+  width: 75%;
+  text-align: right;
+}
+@media (max-width: 600px) {
+  /* line 53, sass/+partials/_theme/_gt-footer.scss */
+  #gt-footer #gt-footer-right-1, #gt-footer #gt-footer-right-2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 64, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul, #gt-footer #gt-footer-right-2 ul {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 9pt;
+  border-bottom: 1px solid #f1bf47;
+  padding-bottom: 5px;
+}
+/* line 71, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul li, #gt-footer #gt-footer-right-2 ul li {
+  display: inline;
+}
+/* line 74, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul li a, #gt-footer #gt-footer-right-2 ul li a {
+  display: inline-block;
+  color: #333;
+  margin-left: 15px;
+}
+/* line 79, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul li a:hover, #gt-footer #gt-footer-right-2 ul li a:hover {
+  text-decoration: underline;
+}
+/* line 89, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-2 ul {
+  margin-right: 0px;
+  padding-right: 12px;
+  margin-top: 5px;
+  border-bottom: 0;
+}
+
+/***************************************************************************************/
+/* Stolen from GT Theme - deal with it */
+/***************************************************************************************/
+/* line 101, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer .row {
+  padding: 10px;
+}
+
+/* line 102, sass/+partials/_theme/_gt-footer.scss */
+/* #footer-logo {
+  float: left;
+  text-align: center;
+} */
+@media (max-width: 600px) {
+  /* line 102, sass/+partials/_theme/_gt-footer.scss */
+  #footer-logo {
+    float: none;
+  }
+}
+
+/* line 111, sass/+partials/_theme/_gt-footer.scss */
+#footer-logo img {
+  width: 140px;
+}
+
+/* line 112, sass/+partials/_theme/_gt-footer.scss */
+#footer-logo p {
+  color: #6c5003;
+  font-size: .786em;
+  line-height: 1.1;
+  margin: 0 0 6px 0;
+}
+
+/* line 118, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links {
+  float: right;
+  position: relative;
+  width: 80%;
+}
+@media (max-width: 600px) {
+  /* line 118, sass/+partials/_theme/_gt-footer.scss */
+  #footer-utility-links {
+    float: none;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+}
+
+/* line 129, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu {
+  margin: 0;
+  padding: 5px 0;
+  text-align: right;
+}
+@media (max-width: 600px) {
+  /* line 129, sass/+partials/_theme/_gt-footer.scss */
+  #footer-utility-links .menu {
+    text-align: center;
+  }
+}
+
+/* line 138, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .gt-footer-utility-links-wrapper {
+  padding-top: 8px;
+}
+
+/* line 139, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .gt-footer-utility-links-wrapper.login-link-included {
+  padding-top: 0px;
+}
+
+/* line 140, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-utility-links {
+  border-bottom: 1px solid #c5930c;
+}
+
+/* line 141, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-legal-links {
+  margin-top: 30px;
+}
+
+/* line 142, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-legal-links.custom-links-included {
+  border-top: 1px solid #f6ba1a;
+  margin-top: 0;
+}
+
+/* line 146, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li {
+  display: inline;
+  font-size: 0.9em;
+  padding: 2px 0 2px 10px;
+  margin: 0 0 2px;
+}
+
+/* line 152, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li:after {
+  content: '\f142';
+  display: inline-block;
+  color: #b08612;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+/* line 160, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li.last:after {
+  content: '';
+}
+
+/* line 161, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li a {
+  color: #6c5003;
+  text-decoration: none;
+}
+
+/* line 165, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li a:hover {
+  color: #333;
+}
+
+/* line 166, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-login-links li {
+  padding: 0;
+  margin: 0 0 0 12px;
+}
+
+/* line 170, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-login-links li.first {
+  margin-right: 12px;
+}
+
+/* line 173, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-login-links li:after {
+  content: '\f023';
+  font-size: 1em;
+}
+
+/***************************************************************************************/
+/* Superfooter */
+/***************************************************************************************/
+/* line 182, sass/+partials/_theme/_gt-footer.scss */
+#gt-disclaimer {
+  padding: 3px 10px;
+  float: right;
+}
+/* line 187, sass/+partials/_theme/_gt-footer.scss */
+#gt-disclaimer .gt-disclaimer-wrap .gt-disclaimer-content {
+  font-size: 7pt;
+  text-align: right;
+  color: #9f740b;
+  padding-left: 20%;
+}
+@media (max-width: 600px) {
+  /* line 187, sass/+partials/_theme/_gt-footer.scss */
+  #gt-disclaimer .gt-disclaimer-wrap .gt-disclaimer-content {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 187, sass/+partials/_theme/_gt-footer.scss */
+  #gt-disclaimer .gt-disclaimer-wrap .gt-disclaimer-content {
+    padding: 0;
+  }
+}
+
+/***************************************************************************************/
+/* Variables for this bar */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Background Color Mixins */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Utility */
+/***************************************************************************************/
+/* line 127, sass/+partials/_theme/_gt-header.scss */
+#gt-branding {
+  font-size: 11pt;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 131, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-hide {
+  display: none;
+}
+/* line 135, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black {
+  background-color: black;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink a {
+  color: #eeeeee;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink a:hover {
+  color: #d4d4d4;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: #4d4d4d;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons .empty {
+  border: 1px dashed black;
+  color: #eeeeee;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons a.gt-fa {
+  color: #d4d4d4;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons a.gt-fa:hover {
+  color: #eeeeee;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons a.gt-fa:before:hover {
+  color: #eeeeee;
+}
+/* line 139, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white {
+  background-color: whitesmoke;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink a {
+  color: #777777;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink a:hover {
+  color: #919191;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: gainsboro;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons .empty {
+  border: 1px dashed #cfcfcf;
+  color: #777777;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons a.gt-fa {
+  color: #919191;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons a.gt-fa:hover {
+  color: #777777;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons a.gt-fa:before:hover {
+  color: #777777;
+}
+/* line 143, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy {
+  background-color: #023d7b;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink a {
+  color: #eeeeee;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink a:hover {
+  color: #d4d4d4;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: #0356ad;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons .empty {
+  border: 1px dashed #011830;
+  color: #eeeeee;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons a.gt-fa {
+  color: #d4d4d4;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons a.gt-fa:hover {
+  color: #eeeeee;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons a.gt-fa:before:hover {
+  color: #eeeeee;
+}
+/* line 147, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold {
+  background-color: #eeb221;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink a {
+  color: #333333;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink a:hover {
+  color: #4d4d4d;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: #cc9510;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons .empty {
+  border: 1px dashed #b5840e;
+  color: #333333;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons a.gt-fa {
+  color: #4d4d4d;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons a.gt-fa:hover {
+  color: #333333;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons a.gt-fa:before:hover {
+  color: #333333;
+}
+/* line 151, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .row {
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/* line 159, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .gt-logo-wrapper {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  padding-right: 30px;
+  margin-left: 5px;
+}
+/* line 167, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity {
+  display: inline-block;
+}
+/* line 171, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity h1.gt-identity__logo {
+  margin-bottom: 0;
+  line-height: 1.0;
+}
+/* line 175, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity h1.gt-identity__logo a {
+  display: inline-block;
+}
+/* line 180, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity img {
+  height: 40px;
+  width: auto;
+}
+
+/* line 187, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+/* line 194, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons {
+  list-style: none;
+  float: right;
+}
+/* line 198, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 202, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li a.gt-fa {
+  font-size: 15pt;
+  margin-left: 15px;
+  top: 0px;
+}
+/* line 207, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li a.gt-fa:hover {
+  text-decoration: none;
+}
+/* line 212, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li a.gt-fa:before:hover {
+  text-decoration: none;
+}
+/* line 218, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons .empty {
+  margin-top: 8px;
+  padding: 5px 10px;
+  font-size: 8pt;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 225, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-google-plus {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-google-plus:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f0d5";
+}
+/* line 229, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-facebook {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-facebook:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f230";
+}
+/* line 233, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-twitter {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-twitter:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f099";
+}
+/* line 237, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-pinterest {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-pinterest:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f0d2";
+}
+/* line 241, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-linkedin {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-linkedin:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f0e1";
+}
+/* line 245, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-youtube {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-youtube:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f167";
+}
+/* line 249, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-instagram {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-instagram:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f16d";
+}
+/* line 253, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-flickr {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-flickr:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f16e";
+}
+/* line 257, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-rss {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-rss:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f09e";
+}
+/* line 261, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-vine {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-vine:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f1ca";
+}
+/* line 265, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-git {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-git:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f09b";
+}
+

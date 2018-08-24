@@ -1,0 +1,3252 @@
+
+/* line 80, sass/+theme/_theme-info.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+body {
+  margin: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+img {
+  border: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+figure {
+  margin: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 80, sass/+theme/_theme-info.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Box Sizing
+--------------------------------------------- */
+/* line 86, sass/+theme/_theme-info.scss */
+*,
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Float Clearing
+--------------------------------------------- */
+/* line 106, sass/+theme/_theme-info.scss */
+.clearfix:before,
+.entry:before,
+.entry-content:before,
+.footer-widgets:before,
+.nav-primary:before,
+.nav-secondary:before,
+.pagination:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.site-inner:before,
+.wrap:before {
+  content: " ";
+  display: table;
+}
+
+/* line 122, sass/+theme/_theme-info.scss */
+.clearfix:after,
+.entry:after,
+.entry-content:after,
+.footer-widgets:after,
+.nav-primary:after,
+.nav-secondary:after,
+.pagination:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.wrap:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+/* Typographical Elements
+--------------------------------------------- */
+/* line 136, sass/+theme/_theme-info.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+/* line 152, sass/+theme/_theme-info.scss */
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+/* line 160, sass/+theme/_theme-info.scss */
+::-moz-selection {
+  background-color: #333;
+  color: #fff;
+}
+
+/* line 165, sass/+theme/_theme-info.scss */
+::selection {
+  background-color: #333;
+  color: #fff;
+}
+
+/* line 170, sass/+theme/_theme-info.scss */
+a {
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* line 177, sass/+theme/_theme-info.scss */
+a img {
+}
+
+/* line 181, sass/+theme/_theme-info.scss */
+a:hover {
+  color: #0ebfe9;
+}
+
+/* line 186, sass/+theme/_theme-info.scss */
+p {
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+/* line 191, sass/+theme/_theme-info.scss */
+strong {
+  font-weight: 400;
+}
+
+/* line 196, sass/+theme/_theme-info.scss */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 202, sass/+theme/_theme-info.scss */
+blockquote,
+blockquote::before {
+  color: #999;
+}
+
+/* line 206, sass/+theme/_theme-info.scss */
+blockquote {
+  margin: 40px;
+}
+
+/* line 210, sass/+theme/_theme-info.scss */
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 30px;
+  height: 0;
+  left: -20px;
+  position: relative;
+  top: -10px;
+}
+
+/* line 220, sass/+theme/_theme-info.scss */
+.entry-content code {
+  background-color: #333;
+  color: #ddd;
+}
+
+/* line 225, sass/+theme/_theme-info.scss */
+cite {
+  font-style: normal;
+}
+
+/* Headings
+--------------------------------------------- */
+/* line 237, sass/+theme/_theme-info.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 15px;
+}
+
+/* line 245, sass/+theme/_theme-info.scss */
+h1 {
+  font-size: 30px;
+}
+
+/* line 249, sass/+theme/_theme-info.scss */
+h2 {
+  font-size: 28px;
+}
+
+/* line 253, sass/+theme/_theme-info.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 257, sass/+theme/_theme-info.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 261, sass/+theme/_theme-info.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 265, sass/+theme/_theme-info.scss */
+h6 {
+  font-size: 16px;
+}
+
+/* Objects
+--------------------------------------------- */
+/* line 277, sass/+theme/_theme-info.scss */
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+  max-width: 100%;
+}
+
+/* line 281, sass/+theme/_theme-info.scss */
+img {
+  height: auto;
+}
+
+/* line 286, sass/+theme/_theme-info.scss */
+.featured-content img,
+.gallery img {
+  width: auto;
+  /* IE8 */
+}
+
+/* Forms
+--------------------------------------------- */
+/* line 295, sass/+theme/_theme-info.scss */
+input,
+select,
+textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #333;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px;
+  width: 100%;
+}
+
+/* line 309, sass/+theme/_theme-info.scss */
+input:focus,
+textarea:focus {
+  border: 1px solid #333;
+  outline: none;
+}
+
+/* line 316, sass/+theme/_theme-info.scss */
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+  width: auto;
+}
+
+/* line 320, sass/+theme/_theme-info.scss */
+::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* line 325, sass/+theme/_theme-info.scss */
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+/* line 334, sass/+theme/_theme-info.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button {
+  background-color: #333;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+/* line 352, sass/+theme/_theme-info.scss */
+button:hover,
+input:hover[type="button"],
+input:hover[type="reset"],
+input:hover[type="submit"],
+.button:hover,
+.entry-content .button:hover {
+  background-color: #0ebfe9;
+}
+
+/* line 356, sass/+theme/_theme-info.scss */
+.entry-content .button:hover {
+  color: #fff;
+}
+
+/* line 360, sass/+theme/_theme-info.scss */
+.button {
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* line 366, sass/+theme/_theme-info.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+  display: none;
+}
+
+/* Tables
+--------------------------------------------- */
+/* line 373, sass/+theme/_theme-info.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 2;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* line 381, sass/+theme/_theme-info.scss */
+tbody {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 386, sass/+theme/_theme-info.scss */
+th,
+td {
+  text-align: left;
+}
+
+/* line 390, sass/+theme/_theme-info.scss */
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 395, sass/+theme/_theme-info.scss */
+td {
+  border-top: 1px solid #ddd;
+  padding: 6px 0;
+}
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+/* Site Containers
+--------------------------------------------- */
+/* line 408, sass/+theme/_theme-info.scss */
+.wrap {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* line 413, sass/+theme/_theme-info.scss */
+.site-inner {
+  background-color: #fff;
+  clear: both;
+  padding-top: 40px;
+}
+
+/* line 419, sass/+theme/_theme-info.scss */
+.minimum-landing .site-inner {
+  margin: 40px auto;
+  padding: 60px 60px 20px;
+  width: 800px;
+}
+
+/* Site Containers
+--------------------------------------------- */
+/* line 428, sass/+theme/_theme-info.scss */
+.home-featured {
+  border-bottom: 5px solid #f5f5f5;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+
+/* line 434, sass/+theme/_theme-info.scss */
+.home-featured li {
+  list-style-type: none;
+}
+
+/* line 438, sass/+theme/_theme-info.scss */
+.home-featured .widget {
+  padding: 0 20px;
+}
+
+/* line 442, sass/+theme/_theme-info.scss */
+.home-featured p:last-child {
+  padding: 0 0 24px;
+}
+
+/* line 449, sass/+theme/_theme-info.scss */
+.home-featured-1,
+.home-featured-2,
+.home-featured-3,
+.home-featured-4 {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+/* line 455, sass/+theme/_theme-info.scss */
+.home-featured .simple-social-icons ul li a {
+  padding: 40px !important;
+}
+
+/* line 459, sass/+theme/_theme-info.scss */
+.home-featured .simple-social-icons ul li {
+  margin: 0 0 30px !important;
+}
+
+/* line 463, sass/+theme/_theme-info.scss */
+.site-tagline {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eee;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+/* line 470, sass/+theme/_theme-info.scss */
+.site-tagline p {
+  margin: 0;
+}
+
+/* line 474, sass/+theme/_theme-info.scss */
+.site-tagline-left {
+  float: left;
+  width: 50%;
+}
+
+/* line 479, sass/+theme/_theme-info.scss */
+.site-tagline-right {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/* line 485, sass/+theme/_theme-info.scss */
+.minimum .site-tagline {
+  margin-top: 600px;
+}
+
+/* line 489, sass/+theme/_theme-info.scss */
+a.cta-button {
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 15px 20px;
+}
+
+/* line 500, sass/+theme/_theme-info.scss */
+a.cta-button:hover {
+  background-color: #0ebfe9;
+}
+
+/* Column Widths and Positions
+--------------------------------------------- */
+/* Content */
+/* line 509, sass/+theme/_theme-info.scss */
+.content {
+  float: left;
+  width: 720px;
+}
+
+/* line 514, sass/+theme/_theme-info.scss */
+.sidebar-content .content {
+  float: right;
+}
+
+/* line 518, sass/+theme/_theme-info.scss */
+.full-width-content .content {
+  width: 100%;
+}
+
+/* Column Classes
+	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+--------------------------------------------- */
+/* line 537, sass/+theme/_theme-info.scss */
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+  float: left;
+  margin-left: 2.564102564102564%;
+}
+
+/* line 544, sass/+theme/_theme-info.scss */
+.one-half,
+.three-sixths,
+.two-fourths {
+  width: 48.717948717948715%;
+}
+
+/* line 549, sass/+theme/_theme-info.scss */
+.one-third,
+.two-sixths {
+  width: 31.623931623931625%;
+}
+
+/* line 554, sass/+theme/_theme-info.scss */
+.four-sixths,
+.two-thirds {
+  width: 65.81196581196582%;
+}
+
+/* line 558, sass/+theme/_theme-info.scss */
+.one-fourth {
+  width: 23.076923076923077%;
+}
+
+/* line 562, sass/+theme/_theme-info.scss */
+.three-fourths {
+  width: 74.35897435897436%;
+}
+
+/* line 566, sass/+theme/_theme-info.scss */
+.one-sixth {
+  width: 14.52991452991453%;
+}
+
+/* line 570, sass/+theme/_theme-info.scss */
+.five-sixths {
+  width: 82.90598290598291%;
+}
+
+/* line 574, sass/+theme/_theme-info.scss */
+.first {
+  clear: both;
+  margin-left: 0;
+}
+
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* WordPress
+--------------------------------------------- */
+/* line 587, sass/+theme/_theme-info.scss */
+.avatar {
+  float: left;
+}
+
+/* line 591, sass/+theme/_theme-info.scss */
+.alignleft .avatar {
+  margin-right: 24px;
+}
+
+/* line 595, sass/+theme/_theme-info.scss */
+.alignright .avatar {
+  margin-left: 24px;
+}
+
+/* line 599, sass/+theme/_theme-info.scss */
+.author-box .avatar {
+  height: 72px;
+  margin-right: 24px;
+  width: 72px;
+}
+
+/* line 605, sass/+theme/_theme-info.scss */
+.entry-comments .avatar {
+  height: 48px;
+  width: 48px;
+}
+
+/* line 610, sass/+theme/_theme-info.scss */
+.search-form input[type="submit"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 620, sass/+theme/_theme-info.scss */
+.search-form {
+  overflow: hidden;
+  padding: 3px;
+  width: 100%;
+}
+
+/* line 630, sass/+theme/_theme-info.scss */
+img.centered,
+.aligncenter {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+/* line 636, sass/+theme/_theme-info.scss */
+a.alignnone,
+img.alignnone {
+  margin-bottom: 12px;
+}
+
+/* line 640, sass/+theme/_theme-info.scss */
+.alignleft {
+  float: left;
+  text-align: left;
+}
+
+/* line 645, sass/+theme/_theme-info.scss */
+.alignright {
+  float: right;
+  text-align: right;
+}
+
+/* line 652, sass/+theme/_theme-info.scss */
+a.alignleft,
+a.alignnone,
+a.alignright {
+  max-width: 100%;
+}
+
+/* line 656, sass/+theme/_theme-info.scss */
+a.alignnone {
+  display: inline-block;
+}
+
+/* line 662, sass/+theme/_theme-info.scss */
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+  margin: 0 24px 24px 0;
+}
+
+/* line 668, sass/+theme/_theme-info.scss */
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+  margin: 0 0 24px 24px;
+}
+
+/* line 673, sass/+theme/_theme-info.scss */
+a.alignleft,
+a.alignright {
+  border: none;
+}
+
+/* line 677, sass/+theme/_theme-info.scss */
+.wp-caption-text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+/* line 690, sass/+theme/_theme-info.scss */
+.widget {
+  word-wrap: break-word;
+}
+
+/* line 694, sass/+theme/_theme-info.scss */
+.widget li {
+  list-style-type: none;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* line 700, sass/+theme/_theme-info.scss */
+.widget ol > li {
+  list-style-position: inside;
+  list-style-type: decimal;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+/* line 707, sass/+theme/_theme-info.scss */
+.widget li li {
+  border: none;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+/* line 714, sass/+theme/_theme-info.scss */
+.widget ul > li:last-child,
+.widget p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 718, sass/+theme/_theme-info.scss */
+.widget_calendar table {
+  width: 100%;
+}
+
+/* line 723, sass/+theme/_theme-info.scss */
+.widget_calendar td,
+.widget_calendar th {
+  text-align: center;
+}
+
+/* Genesis
+--------------------------------------------- */
+/* line 730, sass/+theme/_theme-info.scss */
+.breadcrumb {
+  margin-bottom: 40px;
+}
+
+/* line 735, sass/+theme/_theme-info.scss */
+.archive-description,
+.author-box {
+  background-color: #f5f5f5;
+}
+
+/* line 739, sass/+theme/_theme-info.scss */
+.archive-description {
+  margin-bottom: 40px;
+  padding: 40px 40px 16px;
+}
+
+/* line 744, sass/+theme/_theme-info.scss */
+.author-box {
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+/* line 749, sass/+theme/_theme-info.scss */
+.single .author-box {
+  margin-bottom: 60px;
+}
+
+/* line 753, sass/+theme/_theme-info.scss */
+.author-box-title {
+  color: #333;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+/* line 761, sass/+theme/_theme-info.scss */
+.author-box p {
+  margin-bottom: 0;
+}
+
+/* line 765, sass/+theme/_theme-info.scss */
+.author-box .avatar {
+  margin-right: 24px;
+}
+
+/* Featured Post Grid
+------------------------------------------------------------ */
+/* line 773, sass/+theme/_theme-info.scss */
+.genesis-grid-even,
+.genesis-grid-odd {
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 47%;
+}
+
+/* line 780, sass/+theme/_theme-info.scss */
+.genesis-grid-even {
+  float: right;
+}
+
+/* line 784, sass/+theme/_theme-info.scss */
+.genesis-grid-odd {
+  clear: both;
+  float: left;
+}
+
+/* Titles
+--------------------------------------------- */
+/* line 793, sass/+theme/_theme-info.scss */
+.entry-title {
+  font-size: 30px;
+  line-height: 1;
+}
+
+/* line 798, sass/+theme/_theme-info.scss */
+.genesis-grid .entry-title {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+/* line 803, sass/+theme/_theme-info.scss */
+.single-portfolio .entry-title {
+  margin-bottom: 20px;
+}
+
+/* line 808, sass/+theme/_theme-info.scss */
+.entry-title a,
+.sidebar .widget-title a {
+  border: none;
+  color: #333;
+}
+
+/* line 813, sass/+theme/_theme-info.scss */
+.entry-title a:hover {
+  color: #0ebfe9;
+}
+
+/* line 817, sass/+theme/_theme-info.scss */
+.widget-title {
+  font-size: 16px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+/* line 823, sass/+theme/_theme-info.scss */
+#home-featured .widget-title {
+  margin-bottom: 10px;
+}
+
+/* line 827, sass/+theme/_theme-info.scss */
+.sidebar .widget-title a {
+  border: none;
+}
+
+/* line 831, sass/+theme/_theme-info.scss */
+.archive-title {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+/* Featured Content
+--------------------------------------------- */
+/* line 844, sass/+theme/_theme-info.scss */
+.featured-content .entry {
+  border-bottom: 2px solid #f5f5f5;
+  margin-bottom: 24px;
+  padding: 0 0 24px;
+}
+
+/* line 850, sass/+theme/_theme-info.scss */
+.featured-content .entry:last-child {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* line 855, sass/+theme/_theme-info.scss */
+.featured-content .entry-title {
+  border: none;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* line 861, sass/+theme/_theme-info.scss */
+.featured-content .entry-title a {
+  border: none;
+}
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+/* Genesis eNews Extended
+--------------------------------------------- */
+/* line 873, sass/+theme/_theme-info.scss */
+.enews-widget {
+  color: #999;
+}
+
+/* line 877, sass/+theme/_theme-info.scss */
+.enews-widget input {
+  margin-bottom: 16px;
+}
+
+/* line 881, sass/+theme/_theme-info.scss */
+.enews-widget input:focus {
+  border: 1px solid #ddd;
+}
+
+/* line 885, sass/+theme/_theme-info.scss */
+.enews-widget input[type="submit"] {
+  background-color: #0ebfe9;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 892, sass/+theme/_theme-info.scss */
+.enews-widget input:hover[type="submit"] {
+  background-color: #fff;
+  color: #333;
+}
+
+/* line 897, sass/+theme/_theme-info.scss */
+.enews form + p {
+  margin-top: 24px;
+}
+
+/* line 901, sass/+theme/_theme-info.scss */
+.sidebar .enews-widget {
+  background-color: #333;
+  padding: 30px;
+}
+
+/* line 906, sass/+theme/_theme-info.scss */
+.sidebar .enews-widget .widget-title {
+  color: #fff;
+}
+
+/* Genesis Latest Tweets
+--------------------------------------------- */
+/* line 913, sass/+theme/_theme-info.scss */
+.latest-tweets ul li {
+  margin-bottom: 16px;
+}
+
+/* Gravity Forms
+--------------------------------------------- */
+/* line 923, sass/+theme/_theme-info.scss */
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .ginput_complex label {
+  font-size: 16px;
+  padding: 16px;
+}
+
+/* line 928, sass/+theme/_theme-info.scss */
+div.gform_wrapper .ginput_complex label {
+  padding: 0;
+}
+
+/* line 933, sass/+theme/_theme-info.scss */
+div.gform_wrapper li,
+div.gform_wrapper form li {
+  margin: 16px 0 0;
+}
+
+/* line 937, sass/+theme/_theme-info.scss */
+div.gform_wrapper .gform_footer input[type="submit"] {
+  font-size: 16px;
+}
+
+/* Jetpack
+--------------------------------------------- */
+/* line 944, sass/+theme/_theme-info.scss */
+img#wpstats {
+  display: none;
+}
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+/* line 953, sass/+theme/_theme-info.scss */
+.site-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  left: 0;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 964, sass/+theme/_theme-info.scss */
+.admin-bar .site-header {
+  top: 32px;
+}
+
+/* Title Area
+--------------------------------------------- */
+/* line 971, sass/+theme/_theme-info.scss */
+.title-area {
+  float: left;
+  padding: 18px 0;
+  width: 320px;
+}
+
+/* line 977, sass/+theme/_theme-info.scss */
+.header-image .title-area {
+  padding: 0;
+}
+
+/* line 981, sass/+theme/_theme-info.scss */
+.site-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 990, sass/+theme/_theme-info.scss */
+.site-title a,
+.site-title a:hover {
+  border: none;
+  color: #333;
+}
+
+/* line 995, sass/+theme/_theme-info.scss */
+.site-description {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Full width header, no widgets */
+/* line 1005, sass/+theme/_theme-info.scss */
+.header-full-width .title-area,
+.header-full-width .site-title {
+  width: 100%;
+}
+
+/* line 1009, sass/+theme/_theme-info.scss */
+.header-image .site-title a {
+  display: block;
+  text-indent: -9999px;
+}
+
+/* Custom header */
+/* line 1016, sass/+theme/_theme-info.scss */
+.header-image .title-area {
+  padding: 0;
+}
+
+/* line 1020, sass/+theme/_theme-info.scss */
+.header-image .site-title a {
+  height: 60px;
+  display: block;
+  text-indent: -9999px;
+  max-width: 320px;
+}
+
+/* Widget Area
+--------------------------------------------- */
+/* line 1030, sass/+theme/_theme-info.scss */
+.site-header .widget-area {
+  float: right;
+  text-align: right;
+  width: 800px;
+}
+
+/* line 1036, sass/+theme/_theme-info.scss */
+.site-header .search-form {
+  float: right;
+  margin-top: 10px;
+}
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* line 1046, sass/+theme/_theme-info.scss */
+.genesis-nav-menu {
+  clear: both;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* line 1056, sass/+theme/_theme-info.scss */
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+}
+
+/* line 1062, sass/+theme/_theme-info.scss */
+.genesis-nav-menu a {
+  border: none;
+  color: #333;
+  display: block;
+  font-size: 14px;
+  padding: 20px;
+  position: relative;
+}
+
+/* line 1073, sass/+theme/_theme-info.scss */
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #0ebfe9;
+}
+
+/* line 1077, sass/+theme/_theme-info.scss */
+.genesis-nav-menu > .menu-item > a {
+  text-transform: uppercase;
+}
+
+/* line 1081, sass/+theme/_theme-info.scss */
+.genesis-nav-menu .sub-menu {
+  left: -9999px;
+  letter-spacing: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -ms-transition: opacity .4s ease-in-out;
+  -o-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+  width: 160px;
+  z-index: 99;
+}
+
+/* line 1095, sass/+theme/_theme-info.scss */
+.genesis-nav-menu .sub-menu a {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 16px 20px;
+  position: relative;
+  width: 160px;
+}
+
+/* line 1104, sass/+theme/_theme-info.scss */
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: -54px 0 0 159px;
+}
+
+/* line 1108, sass/+theme/_theme-info.scss */
+.genesis-nav-menu .menu-item:hover {
+  position: static;
+}
+
+/* line 1112, sass/+theme/_theme-info.scss */
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  left: auto;
+  opacity: 1;
+}
+
+/* line 1117, sass/+theme/_theme-info.scss */
+.genesis-nav-menu > .first > a {
+  padding-left: 0;
+}
+
+/* line 1121, sass/+theme/_theme-info.scss */
+.genesis-nav-menu > .last > a {
+  padding-right: 0;
+}
+
+/* line 1125, sass/+theme/_theme-info.scss */
+.genesis-nav-menu > .right {
+  display: inline-block;
+  float: right;
+  list-style-type: none;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+/* line 1133, sass/+theme/_theme-info.scss */
+.genesis-nav-menu > .right > a {
+  display: inline;
+  padding: 0;
+}
+
+/* line 1138, sass/+theme/_theme-info.scss */
+.genesis-nav-menu > .rss > a {
+  margin-left: 48px;
+}
+
+/* line 1142, sass/+theme/_theme-info.scss */
+.genesis-nav-menu > .search {
+  padding: 6px 0 0;
+}
+
+/* Site Header Navigation
+--------------------------------------------- */
+/* line 1149, sass/+theme/_theme-info.scss */
+.site-header .sub-menu {
+  border-top: 1px solid #eee;
+}
+
+/* line 1153, sass/+theme/_theme-info.scss */
+.site-header .sub-menu .sub-menu {
+  margin-top: -55px;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+/* line 1160, sass/+theme/_theme-info.scss */
+.nav-primary {
+  background-color: #333;
+}
+
+/* line 1165, sass/+theme/_theme-info.scss */
+.nav-primary a,
+.nav-primary .genesis-nav-menu .sub-menu a {
+  color: #fff;
+}
+
+/* line 1169, sass/+theme/_theme-info.scss */
+.nav-primary .genesis-nav-menu .sub-menu a {
+  background-color: #333;
+  border: 1px solid #444;
+  border-top: none;
+}
+
+/* line 1175, sass/+theme/_theme-info.scss */
+.nav-primary .sub-menu a:hover {
+  color: #0ebfe9;
+}
+
+/* Secondary Navigation
+--------------------------------------------- */
+/* line 1182, sass/+theme/_theme-info.scss */
+.nav-secondary {
+  margin-bottom: 20px;
+}
+
+/* line 1186, sass/+theme/_theme-info.scss */
+.site-footer .nav-secondary a {
+  color: #fff;
+  margin: 0 30px;
+  padding: 0;
+}
+
+/* line 1192, sass/+theme/_theme-info.scss */
+.site-footer .nav-secondary a:hover {
+  color: #999;
+}
+
+/* line 1196, sass/+theme/_theme-info.scss */
+.site-footer .nav-secondary .genesis-nav-menu .sub-menu a {
+  background-color: #333;
+  border: 1px solid #444;
+  border-top: none;
+  padding: 16px;
+}
+
+/* line 1203, sass/+theme/_theme-info.scss */
+.site-footer .nav-secondary .sub-menu a:hover {
+  color: #0ebfe9;
+}
+
+/* Responsive Menu
+--------------------------------------------- */
+/* line 1210, sass/+theme/_theme-info.scss */
+#responsive-menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+/* line 1215, sass/+theme/_theme-info.scss */
+#responsive-menu-icon::before {
+  color: #333;
+  content: "\f333";
+  font: normal 24px/1 'dashicons';
+  margin: 0 auto;
+}
+
+/*
+Content Area
+---------------------------------------------------------------------------------------------------- */
+/* Entries
+--------------------------------------------- */
+/* line 1230, sass/+theme/_theme-info.scss */
+.entry {
+  margin-bottom: 40px;
+}
+
+/* line 1234, sass/+theme/_theme-info.scss */
+.post-type-archive-portfolio .entry {
+  float: left;
+  margin-bottom: 60px;
+  width: 50%;
+}
+
+/* line 1240, sass/+theme/_theme-info.scss */
+.post-type-archive-portfolio .entry:nth-of-type(2n) {
+  float: right;
+  padding-left: 30px;
+}
+
+/* line 1245, sass/+theme/_theme-info.scss */
+.post-type-archive-portfolio .entry:nth-of-type(2n+1) {
+  clear: left;
+  padding-right: 30px;
+}
+
+/* line 1250, sass/+theme/_theme-info.scss */
+.single-portfolio .entry {
+  text-align: center;
+}
+
+/* line 1257, sass/+theme/_theme-info.scss */
+.entry-content ol,
+.entry-content p,
+.entry-content ul,
+.quote-caption {
+  margin-bottom: 26px;
+}
+
+/* line 1262, sass/+theme/_theme-info.scss */
+.entry-content ol,
+.entry-content ul {
+  margin-left: 40px;
+}
+
+/* line 1266, sass/+theme/_theme-info.scss */
+.entry-content ol > li {
+  list-style-type: decimal;
+}
+
+/* line 1270, sass/+theme/_theme-info.scss */
+.entry-content ul > li {
+  list-style-type: disc;
+}
+
+/* line 1275, sass/+theme/_theme-info.scss */
+.entry-content ol ol,
+.entry-content ul ul {
+  margin-bottom: 0;
+}
+
+/* line 1279, sass/+theme/_theme-info.scss */
+.entry-content .search-form {
+  width: 50%;
+}
+
+/* line 1283, sass/+theme/_theme-info.scss */
+.entry-meta {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+/* line 1288, sass/+theme/_theme-info.scss */
+.entry-meta a {
+  border: none;
+  font-weight: 300;
+}
+
+/* line 1293, sass/+theme/_theme-info.scss */
+.entry-header .entry-meta {
+  margin-bottom: 24px;
+}
+
+/* line 1297, sass/+theme/_theme-info.scss */
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+}
+
+/* line 1303, sass/+theme/_theme-info.scss */
+.entry-categories,
+.entry-tags {
+  display: block;
+}
+
+/* After Entry
+--------------------------------------------- */
+/* line 1310, sass/+theme/_theme-info.scss */
+.after-entry {
+  background-color: #f5f5f5;
+  margin-bottom: 60px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* line 1317, sass/+theme/_theme-info.scss */
+.after-entry .widget {
+  margin-bottom: 40px;
+}
+
+/* line 1323, sass/+theme/_theme-info.scss */
+.after-entry .featured-content .entry:last-child,
+.after-entry .widget:last-child,
+.after-entry p:last-child {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1328, sass/+theme/_theme-info.scss */
+.after-entry li {
+  list-style-type: none;
+}
+
+/* Pagination
+--------------------------------------------- */
+/* line 1335, sass/+theme/_theme-info.scss */
+.pagination {
+  clear: both;
+  margin: 40px 0;
+}
+
+/* line 1340, sass/+theme/_theme-info.scss */
+.pagination li {
+  display: inline;
+}
+
+/* line 1344, sass/+theme/_theme-info.scss */
+.pagination li a {
+  background-color: #333;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 8px 12px;
+}
+
+/* line 1358, sass/+theme/_theme-info.scss */
+.pagination li a:hover,
+.pagination li.active a {
+  background-color: #0ebfe9;
+}
+
+/* Comments
+--------------------------------------------- */
+/* line 1367, sass/+theme/_theme-info.scss */
+.comment-respond,
+.entry-comments,
+.entry-pings {
+  margin-bottom: 60px;
+}
+
+/* line 1371, sass/+theme/_theme-info.scss */
+.comment-content {
+  clear: both;
+}
+
+/* line 1375, sass/+theme/_theme-info.scss */
+.entry-comments .comment-author {
+  margin-bottom: 0;
+}
+
+/* line 1381, sass/+theme/_theme-info.scss */
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+  width: 50%;
+}
+
+/* line 1385, sass/+theme/_theme-info.scss */
+.comment-respond label {
+  display: block;
+  margin-right: 12px;
+}
+
+/* line 1391, sass/+theme/_theme-info.scss */
+.comment-list li,
+.ping-list li {
+  list-style-type: none;
+}
+
+/* line 1395, sass/+theme/_theme-info.scss */
+.comment-list li {
+  margin-top: 24px;
+  padding: 32px;
+}
+
+/* line 1400, sass/+theme/_theme-info.scss */
+.comment-list li li {
+  margin-right: -32px;
+}
+
+/* line 1404, sass/+theme/_theme-info.scss */
+li.comment {
+  background-color: #f5f5f5;
+  border: 2px solid #fff;
+  border-right: none;
+}
+
+/* line 1410, sass/+theme/_theme-info.scss */
+.comment .avatar {
+  margin: 0 16px 24px 0;
+}
+
+/* line 1414, sass/+theme/_theme-info.scss */
+.entry-pings .reply {
+  display: none;
+}
+
+/*
+Sidebar
+---------------------------------------------------------------------------------------------------- */
+/* line 1426, sass/+theme/_theme-info.scss */
+.sidebar {
+  float: right;
+  margin-top: 10px;
+  width: 340px;
+}
+
+/* line 1432, sass/+theme/_theme-info.scss */
+.sidebar-content .sidebar {
+  float: left;
+}
+
+/* line 1436, sass/+theme/_theme-info.scss */
+.sidebar img {
+  margin-bottom: 15px;
+}
+
+/* line 1440, sass/+theme/_theme-info.scss */
+.sidebar .featured-content img {
+  margin-bottom: 0;
+}
+
+/* line 1444, sass/+theme/_theme-info.scss */
+.sidebar .widget {
+  margin-bottom: 40px;
+}
+
+/* line 1448, sass/+theme/_theme-info.scss */
+.sidebar .tagcloud a {
+  background-color: #333;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 5px 5px 0;
+  padding: 5px 10px;
+}
+
+/* line 1460, sass/+theme/_theme-info.scss */
+.sidebar .tagcloud a:hover {
+  background-color: #0ebfe9;
+  color: #fff;
+}
+
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* line 1469, sass/+theme/_theme-info.scss */
+.footer-widgets {
+  background-color: #333;
+  color: #999;
+  clear: both;
+}
+
+/* line 1475, sass/+theme/_theme-info.scss */
+.footer-widgets .wrap {
+  border-bottom: 1px solid #444;
+  padding: 40px 0 16px;
+}
+
+/* line 1482, sass/+theme/_theme-info.scss */
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+  width: 340px;
+}
+
+/* line 1486, sass/+theme/_theme-info.scss */
+.footer-widgets-1 {
+  margin-right: 60px;
+}
+
+/* line 1491, sass/+theme/_theme-info.scss */
+.footer-widgets-1,
+.footer-widgets-2 {
+  float: left;
+}
+
+/* line 1495, sass/+theme/_theme-info.scss */
+.footer-widgets-3 {
+  float: right;
+}
+
+/* line 1499, sass/+theme/_theme-info.scss */
+.footer-widgets a {
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+}
+
+/* line 1504, sass/+theme/_theme-info.scss */
+.footer-widgets a:hover {
+  color: #999;
+}
+
+/* line 1508, sass/+theme/_theme-info.scss */
+.footer-widgets .widget {
+  margin-bottom: 40px;
+}
+
+/* line 1512, sass/+theme/_theme-info.scss */
+.footer-widgets .widget-title {
+  color: #fff;
+}
+
+/* line 1516, sass/+theme/_theme-info.scss */
+.footer-widgets li {
+  list-style-type: none;
+  margin-bottom: 6px;
+  word-wrap: break-word;
+}
+
+/* line 1522, sass/+theme/_theme-info.scss */
+.footer-widgets .search-form input:focus {
+  border: 1px solid #ddd;
+}
+
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+/* line 1531, sass/+theme/_theme-info.scss */
+.site-footer {
+  background-color: #333;
+  letter-spacing: 1px;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* line 1539, sass/+theme/_theme-info.scss */
+.site-footer a,
+.site-footer p {
+  color: #999;
+}
+
+/* line 1543, sass/+theme/_theme-info.scss */
+.site-footer a:hover {
+  color: #fff;
+}
+
+/* line 1547, sass/+theme/_theme-info.scss */
+.site-footer a {
+  border: none;
+  font-weight: 300;
+}
+
+/* line 1552, sass/+theme/_theme-info.scss */
+.site-footer p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1179px) {
+  /* line 1566, sass/+theme/_theme-info.scss */
+  .wrap {
+    max-width: 960px;
+  }
+
+  /* line 1570, sass/+theme/_theme-info.scss */
+  .site-header .widget-area {
+    width: 620px;
+  }
+
+  /* line 1574, sass/+theme/_theme-info.scss */
+  .content {
+    width: 580px;
+  }
+
+  /* line 1581, sass/+theme/_theme-info.scss */
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3,
+  .sidebar {
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+	
+	
+  /* line 1589, sass/+theme/_theme-info.scss */
+  .wrap {
+    max-width: 768px;
+  }
+	h1{
+		font-size: 100px;
+	}
+  /* line 1602, sass/+theme/_theme-info.scss */
+  .content,
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3,
+  .minimum-landing .site-inner,
+  .sidebar,
+  .site-header .widget-area,
+  .site-tagline-left,
+  .site-tagline-right,
+  .title-area {
+    width: 100%;
+  }
+
+  /* line 1606, sass/+theme/_theme-info.scss */
+  .site-header {
+    position: static;
+  }
+
+  /* line 1610, sass/+theme/_theme-info.scss */
+  .site-inner {
+    padding: 40px 5%;
+  }
+
+  /* line 1619, sass/+theme/_theme-info.scss */
+  .post-type-archive-portfolio .entry,
+  .site-header .title-area,
+  .site-header .search-form,
+  .site-header .widget-area,
+  .site-tagline-left,
+  .site-tagline-right {
+    text-align: center;
+  }
+
+  /* line 1623, sass/+theme/_theme-info.scss */
+  .header-image .site-title a {
+    margin: 0 auto 10px;
+  }
+
+  /* line 1627, sass/+theme/_theme-info.scss */
+  .site-header .search-form {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  /* line 1633, sass/+theme/_theme-info.scss */
+  .site-header .widget-area {
+    padding: 0 5%;
+  }
+
+  /* line 1637, sass/+theme/_theme-info.scss */
+  .site-description {
+    font-size: 30px;
+  }
+
+  /* line 1641, sass/+theme/_theme-info.scss */
+  .site-tagline {
+    margin-top: 0;
+    padding: 20px 0;
+  }
+
+  /* line 1646, sass/+theme/_theme-info.scss */
+  .minimum .site-tagline {
+    margin-top: 400px;
+  }
+
+  /* line 1653, sass/+theme/_theme-info.scss */
+  .genesis-nav-menu li,
+  .site-header ul.genesis-nav-menu,
+  .site-tagline-left,
+  .site-tagline-right {
+    float: none;
+  }
+
+  /* line 1657, sass/+theme/_theme-info.scss */
+  .site-tagline-left p {
+    margin-bottom: 20px;
+  }
+
+  /* line 1661, sass/+theme/_theme-info.scss */
+  .minimum-landing .site-inner {
+    margin: 0;
+    padding: 40px 40px 0;
+  }
+
+  /* line 1666, sass/+theme/_theme-info.scss */
+  .minimum-landing .site-container {
+    padding: 5%;
+  }
+
+  /* line 1673, sass/+theme/_theme-info.scss */
+  .footer-widgets .widget,
+  .nav-primary .wrap,
+  .site-footer .wrap,
+  .site-tagline {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* line 1678, sass/+theme/_theme-info.scss */
+  .site-footer {
+    padding: 40px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 1686, sass/+theme/_theme-info.scss */
+  .site-header {
+    padding-bottom: 10px;
+  }
+
+  /* line 1690, sass/+theme/_theme-info.scss */
+  .title-area {
+    padding-bottom: 6px;
+  }
+
+  /* line 1694, sass/+theme/_theme-info.scss */
+  .minimum .site-tagline {
+    margin-top: 200px;
+  }
+
+  /* line 1698, sass/+theme/_theme-info.scss */
+  .genesis-nav-menu a {
+    padding: 20px 10px;
+  }
+
+  /* line 1702, sass/+theme/_theme-info.scss */
+  .site-footer .nav-secondary a {
+    margin: 0 10px;
+  }
+
+  /* line 1706, sass/+theme/_theme-info.scss */
+  .responsive-menu {
+    display: none;
+  }
+
+  /* line 1710, sass/+theme/_theme-info.scss */
+  #responsive-menu-icon {
+    display: block;
+  }
+
+  /* line 1714, sass/+theme/_theme-info.scss */
+  .home-featured .simple-social-icons ul li a {
+    font-size: 36px !important;
+    padding: 20px !important;
+  }
+
+  /* line 1721, sass/+theme/_theme-info.scss */
+  .genesis-grid-even,
+  .genesis-grid-odd,
+  .post-type-archive-portfolio .entry {
+    width: 100%;
+  }
+
+  /* line 1726, sass/+theme/_theme-info.scss */
+  .post-type-archive-portfolio .entry:nth-of-type(2n),
+  .post-type-archive-portfolio .entry:nth-of-type(2n+1) {
+    float: none;
+    padding: 0;
+  }
+
+  /* line 1741, sass/+theme/_theme-info.scss */
+  .five-sixths,
+  .four-sixths,
+  .one-fourth,
+  .one-half,
+  .one-sixth,
+  .one-third,
+  .three-fourths,
+  .three-sixths,
+  .two-fourths,
+  .two-sixths,
+  .two-thirds {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 1753, sass/+theme/_theme-info.scss */
+  .home-featured-1,
+  .home-featured-2,
+  .home-featured-3,
+  .home-featured-4 {
+    width: 50%;
+  }
+
+  /* line 1757, sass/+theme/_theme-info.scss */
+  .home-featured .widget-area:nth-of-type(2n+1) {
+    clear: left;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+	h1{
+		font-size: 100px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 1765, sass/+theme/_theme-info.scss */
+  .header-image .site-header .title-area .site-title a {
+    background-size: contain !important;
+  }
+  h1{
+		font-size: 100px;
+	}
+}
+/***************************************************************************************/
+/* Imports */
+/***************************************************************************************/
+/* css3 */
+/* breakpoint */
+/* No files to import found in +gt/font-awesome/* */
+/* font awesome */
+/* No files to import found in +gt/mixin/* */
+/* gt mixins */
+/***************************************************************************************/
+/* Default GT Colors */
+/***************************************************************************************/
+/**************************************************************************************/
+/* 	Media Query Variables */
+/**************************************************************************************/
+/* define cutoff for mobile - 31em/496px */
+/* define cutoff for tablet - 51em/816px */
+/* define cutoff for huge - 71em(?)/1024px */
+/**************************************************************************************/
+/* 	Media Queries */
+/**************************************************************************************/
+/***************************************************************************************/
+/* Palladio */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Foundation */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Font Awesome */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Roboto */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Helvetica */
+/***************************************************************************************/
+/* base includes */
+/***************************************************************************************/
+/*  */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Helpers */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Default Handler */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Before Text */
+/***************************************************************************************/
+/***************************************************************************************/
+/* After Tet */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Creates a button. */
+/***************************************************************************************/
+/***************************************************************************************/
+/*  */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Creates a pull-quote. */
+/***************************************************************************************/
+/**
+ * @file
+ * @font-face font inclusions
+ *
+ * CSS for including fonts.
+ *
+ */
+/*
+ *  NOTE: Font Awesome now loaded via CDN
+ *
+ */
+/*
+ * Web Fonts from fontspring.com
+ *
+ * The fonts included below are subject to the End User License purchased by Georgia Tech
+ * from Fontspring and copyrighted by the listed vendor. The fonts are protected under domestic
+ * and international trademark and copyright law. You are prohibited from modifying,
+ * reverse engineering, duplicating, or distributing this font software.
+ * FOR DISPLAY ON GATECH.EDU SITES ONLY.
+ *
+ * Vendor:      FontSite Inc.
+ * License URL: http://www.fontspring.com/fflicense/fontsite
+ *
+ */
+/* Foundation Sans Roman */
+@font-face {
+  font-family: 'FoundationSansRegular';
+  src: url("fonts/foundation-sans/foundationsans_roman_macroman/FoundationSans-Roman-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_roman_macroman/FoundationSans-Roman-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_roman_macroman/FoundationSans-Roman-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_roman_macroman/FoundationSans-Roman-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_roman_macroman/FoundationSans-Roman-webfont.svg#FoundationSansRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Italic */
+@font-face {
+  font-family: 'FoundationSansItalic';
+  src: url("fonts/foundation-sans/foundationsans_italic_macroman/FoundationSans-Italic-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_italic_macroman/FoundationSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_italic_macroman/FoundationSans-Italic-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_italic_macroman/FoundationSans-Italic-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_italic_macroman/FoundationSans-Italic-webfont.svg#FoundationSansItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Light */
+@font-face {
+  font-family: 'FoundationSansLight';
+  src: url("fonts/foundation-sans/foundationsans_light_macroman/FoundationSans-Light-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_light_macroman/FoundationSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_light_macroman/FoundationSans-Light-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_light_macroman/FoundationSans-Light-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_light_macroman/FoundationSans-Light-webfont.svg#FoundationSansLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Light Italic */
+@font-face {
+  font-family: 'FoundationSansLightItalic';
+  src: url("fonts/foundation-sans/foundationsans_lightitalic_macroman/FoundationSans-Light-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_lightitalic_macroman/FoundationSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_lightitalic_macroman/FoundationSans-Light-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_lightitalic_macroman/FoundationSans-Light-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_lightitalic_macroman/FoundationSans-Light-webfont.svg#FoundationSansLightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Bold */
+@font-face {
+  font-family: 'FoundationSansBold';
+  src: url("fonts/foundation-sans/foundationsans_bold_macroman/FoundationSans-Bold-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_bold_macroman/FoundationSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_bold_macroman/FoundationSans-Bold-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_bold_macroman/FoundationSans-Bold-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_bold_macroman/FoundationSans-Bold-webfont.svg#FoundationSansBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Bold Italic */
+@font-face {
+  font-family: 'FoundationSansBoldItalic';
+  src: url("fonts/foundation-sans/foundationsans_bolditalic_macroman/FoundationSans-BoldItalic-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_bolditalic_macroman/FoundationSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_bolditalic_macroman/FoundationSans-BoldItalic-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_bolditalic_macroman/FoundationSans-BoldItalic-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_bolditalic_macroman/FoundationSans-BoldItalic-webfont.svg#FoundationSansBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Condensed */
+@font-face {
+  font-family: 'FoundationSansCondensed';
+  src: url("fonts/foundation-sans/foundationsans_condensed_macroman/FoundationSans-Cond-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_condensed_macroman/FoundationSans-Cond-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_condensed_macroman/FoundationSans-Cond-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_condensed_macroman/FoundationSans-Cond-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_condensed_macroman/FoundationSans-Cond-webfont.svg#FoundationSansCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Condensed Italic */
+@font-face {
+  font-family: 'FoundationSansCondensedItalic';
+  src: url("fonts/foundation-sans/foundationsans_condenseditalic_macroman/FoundationSans-CondIt-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_condenseditalic_macroman/FoundationSans-CondIt-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_condenseditalic_macroman/FoundationSans-CondIt-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_condenseditalic_macroman/FoundationSans-CondIt-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_condenseditalic_macroman/FoundationSans-CondIt-webfont.svg#FoundationSansCondensedItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Bold Condensed */
+@font-face {
+  font-family: 'FoundationSansBoldCondensed';
+  src: url("fonts/foundation-sans/foundationsans_boldcondensed_macroman/FoundationSans-BoldCd-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_boldcondensed_macroman/FoundationSans-BoldCd-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_boldcondensed_macroman/FoundationSans-BoldCd-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_boldcondensed_macroman/FoundationSans-BoldCd-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_boldcondensed_macroman/FoundationSans-BoldCd-webfont.svg#FoundationSansBoldCondensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Foundation Sans Bold Condensed Italic */
+@font-face {
+  font-family: 'FoundationSansBoldCondensedItalic';
+  src: url("fonts/foundation-sans/foundationsans_boldcondenseditalic_macroman/FoundationSans-BoldCdIt-webfont.eot");
+  src: url("fonts/foundation-sans/foundationsans_boldcondenseditalic_macroman/FoundationSans-BoldCdIt-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/foundation-sans/foundationsans_boldcondenseditalic_macroman/FoundationSans-BoldCdIt-webfont.woff") format("woff"), url("fonts/foundation-sans/foundationsans_boldcondenseditalic_macroman/FoundationSans-BoldCdIt-webfont.ttf") format("truetype"), url("fonts/foundation-sans/foundationsans_boldcondenseditalic_macroman/FoundationSans-BoldCdIt-webfont.svg#FoundationSansBoldCondensedItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Palladio Regular */
+@font-face {
+  font-family: 'PalladioFSRegular';
+  src: url("fonts/palladiofs/palladiofs_regular_macroman/Palladio-Regular-webfont.eot");
+  src: url("fonts/palladiofs/palladiofs_regular_macroman/Palladio-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/palladiofs/palladiofs_regular_macroman/Palladio-Regular-webfont.woff") format("woff"), url("fonts/palladiofs/palladiofs_regular_macroman/Palladio-Regular-webfont.ttf") format("truetype"), url("fonts/palladiofs/palladiofs_regular_macroman/Palladio-Regular-webfont.svg#PalladioFSRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Palladio Italic */
+@font-face {
+  font-family: 'PalladioFSItalic';
+  src: url("fonts/palladiofs/palladiofs_italic_macroman/Palladio-Italic-webfont.eot");
+  src: url("fonts/palladiofs/palladiofs_italic_macroman/Palladio-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/palladiofs/palladiofs_italic_macroman/Palladio-Italic-webfont.woff") format("woff"), url("fonts/palladiofs/palladiofs_italic_macroman/Palladio-Italic-webfont.ttf") format("truetype"), url("fonts/palladiofs/palladiofs_italic_macroman/Palladio-Italic-webfont.svg#PalladioFSItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Palladio Bold */
+@font-face {
+  font-family: 'PalladioFSBold';
+  src: url("fonts/palladiofs/palladiofs_bold_macroman/Palladio-Bold-webfont.eot");
+  src: url("fonts/palladiofs/palladiofs_bold_macroman/Palladio-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/palladiofs/palladiofs_bold_macroman/Palladio-Bold-webfont.woff") format("woff"), url("fonts/palladiofs/palladiofs_bold_macroman/Palladio-Bold-webfont.ttf") format("truetype"), url("fonts/palladiofs/palladiofs_bold_macroman/Palladio-Bold-webfont.svg#PalladioFSBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Palladio Bold Italic */
+@font-face {
+  font-family: 'PalladioFSBoldItalic';
+  src: url("fonts/palladiofs/palladiofs_bolditalic_macroman/Palladio-BoldItalic-webfont.eot");
+  src: url("fonts/palladiofs/palladiofs_bolditalic_macroman/Palladio-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/palladiofs/palladiofs_bolditalic_macroman/Palladio-BoldItalic-webfont.woff") format("woff"), url("fonts/palladiofs/palladiofs_bolditalic_macroman/Palladio-BoldItalic-webfont.ttf") format("truetype"), url("fonts/palladiofs/palladiofs_bolditalic_macroman/Palladio-BoldItalic-webfont.svg#PalladioFSBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Palladio Caps */
+@font-face {
+  font-family: 'PalladioFSCaps';
+  src: url("fonts/palladiofs/palladiofs_caps_macroman/Palladio-Caps-webfont.eot");
+  src: url("fonts/palladiofs/palladiofs_caps_macroman/Palladio-Caps-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/palladiofs/palladiofs_caps_macroman/Palladio-Caps-webfont.woff") format("woff"), url("fonts/palladiofs/palladiofs_caps_macroman/Palladio-Caps-webfont.ttf") format("truetype"), url("fonts/palladiofs/palladiofs_caps_macroman/Palladio-Caps-webfont.svg#PalladioFSCaps") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**************************************************************************************/
+/* 	Media Query Variables */
+/**************************************************************************************/
+/* define cutoff for mobile - 31em/496px */
+/* define cutoff for tablet - 51em/816px */
+/* define cutoff for huge - 71em(?)/1024px */
+/**************************************************************************************/
+/* 	Media Queries */
+/**************************************************************************************/
+/* **************************************************************************************/
+/* Width of content area */
+/* **************************************************************************************/
+/* theme defaults */
+/***************************************************************************************/
+/* Sass Partial Imports */
+/***************************************************************************************/
+/***************************************************************************************/
+/*  */
+/***************************************************************************************/
+/***************************************************************************************/
+/*  */
+/***************************************************************************************/
+/***************************************************************************************/
+/*  */
+/***************************************************************************************/
+/* **************************************************************************************/
+/* Hey site, bring that footer closer to #gt-footer? */
+/* **************************************************************************************/
+/* line 4, sass/+partials/_theme/_gt-footer.scss */
+footer.site-footer {
+  padding: 0;
+}
+
+/* **************************************************************************************/
+/* Footer */
+/* **************************************************************************************/
+/* line 11, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer {
+  clear: both;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 10px;
+  background-color: #eeb221;
+  color: #6c5003;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+}
+/* line 21, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer .row {
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+  margin: 0 auto 0;
+  max-width: 1200px;
+}
+/* line 30, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-inner {
+  background: #eeb221;
+  overflow: hidden;
+}
+/* line 35, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-left {
+  float: left;
+}
+@media (max-width: 600px) {
+  /* line 35, sass/+partials/_theme/_gt-footer.scss */
+  #gt-footer #gt-footer-left {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 44, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-left img {
+  padding: 10px;
+}
+/* line 49, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 {
+  height: 50px;
+}
+/* line 53, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1, #gt-footer #gt-footer-right-2 {
+  float: right;
+  width: 75%;
+  text-align: right;
+}
+@media (max-width: 600px) {
+  /* line 53, sass/+partials/_theme/_gt-footer.scss */
+  #gt-footer #gt-footer-right-1, #gt-footer #gt-footer-right-2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 64, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul, #gt-footer #gt-footer-right-2 ul {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 9pt;
+  border-bottom: 1px solid #f1bf47;
+  padding-bottom: 5px;
+}
+/* line 71, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul li, #gt-footer #gt-footer-right-2 ul li {
+  display: inline;
+}
+/* line 74, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul li a, #gt-footer #gt-footer-right-2 ul li a {
+  display: inline-block;
+  color: #333;
+  margin-left: 15px;
+}
+/* line 79, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-1 ul li a:hover, #gt-footer #gt-footer-right-2 ul li a:hover {
+  text-decoration: underline;
+}
+/* line 89, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer #gt-footer-right-2 ul {
+  margin-right: 0px;
+  padding-right: 12px;
+  margin-top: 5px;
+  border-bottom: 0;
+}
+
+/***************************************************************************************/
+/* Stolen from GT Theme - deal with it */
+/***************************************************************************************/
+/* line 101, sass/+partials/_theme/_gt-footer.scss */
+#gt-footer .row {
+  padding: 10px;
+}
+
+/* line 102, sass/+partials/_theme/_gt-footer.scss */
+#footer-logo {
+  float: left;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  /* line 102, sass/+partials/_theme/_gt-footer.scss */
+  #footer-logo {
+    float: none;
+  }
+}
+
+/* line 111, sass/+partials/_theme/_gt-footer.scss */
+#footer-logo img {
+  width: 140px;
+}
+
+/* line 112, sass/+partials/_theme/_gt-footer.scss */
+#footer-logo p {
+  color: #6c5003;
+  font-size: .786em;
+  line-height: 1.1;
+  margin: 0 0 6px 0;
+}
+
+/* line 118, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links {
+  float: right;
+  position: relative;
+  width: 80%;
+}
+@media (max-width: 600px) {
+  /* line 118, sass/+partials/_theme/_gt-footer.scss */
+  #footer-utility-links {
+    float: none;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+}
+
+/* line 129, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu {
+  margin: 0;
+  padding: 5px 0;
+  text-align: right;
+}
+@media (max-width: 600px) {
+  /* line 129, sass/+partials/_theme/_gt-footer.scss */
+  #footer-utility-links .menu {
+    text-align: center;
+  }
+}
+
+/* line 138, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .gt-footer-utility-links-wrapper {
+  padding-top: 8px;
+}
+
+/* line 139, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .gt-footer-utility-links-wrapper.login-link-included {
+  padding-top: 0px;
+}
+
+/* line 140, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-utility-links {
+  border-bottom: 1px solid #c5930c;
+}
+
+/* line 141, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-legal-links {
+  margin-top: 30px;
+}
+
+/* line 142, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-legal-links.custom-links-included {
+  border-top: 1px solid #f6ba1a;
+  margin-top: 0;
+}
+
+/* line 146, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li {
+  display: inline;
+  font-size: 0.9em;
+  padding: 2px 0 2px 10px;
+  margin: 0 0 2px;
+}
+
+/* line 152, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li:after {
+  content: '\f142';
+  display: inline-block;
+  color: #b08612;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+/* line 160, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li.last:after {
+  content: '';
+}
+
+/* line 161, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li a {
+  color: #6c5003;
+  text-decoration: none;
+}
+
+/* line 165, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu li a:hover {
+  color: #333;
+}
+
+/* line 166, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-login-links li {
+  padding: 0;
+  margin: 0 0 0 12px;
+}
+
+/* line 170, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-login-links li.first {
+  margin-right: 12px;
+}
+
+/* line 173, sass/+partials/_theme/_gt-footer.scss */
+#footer-utility-links .menu.gt-footer-login-links li:after {
+  content: '\f023';
+  font-size: 1em;
+}
+
+/***************************************************************************************/
+/* Superfooter */
+/***************************************************************************************/
+/* line 182, sass/+partials/_theme/_gt-footer.scss */
+#gt-disclaimer {
+  padding: 3px 10px;
+  float: right;
+}
+/* line 187, sass/+partials/_theme/_gt-footer.scss */
+#gt-disclaimer .gt-disclaimer-wrap .gt-disclaimer-content {
+  font-size: 7pt;
+  text-align: right;
+  color: #9f740b;
+  padding-left: 20%;
+}
+@media (max-width: 600px) {
+  /* line 187, sass/+partials/_theme/_gt-footer.scss */
+  #gt-disclaimer .gt-disclaimer-wrap .gt-disclaimer-content {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 187, sass/+partials/_theme/_gt-footer.scss */
+  #gt-disclaimer .gt-disclaimer-wrap .gt-disclaimer-content {
+    padding: 0;
+  }
+}
+
+/***************************************************************************************/
+/* Variables for this bar */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Background Color Mixins */
+/***************************************************************************************/
+/***************************************************************************************/
+/* Utility */
+/***************************************************************************************/
+/* line 127, sass/+partials/_theme/_gt-header.scss */
+#gt-branding {
+  font-size: 11pt;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 131, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-hide {
+  display: none;
+}
+/* line 135, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black {
+  background-color: black;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink a {
+  color: #eeeeee;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink a:hover {
+  color: #d4d4d4;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: #4d4d4d;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons .empty {
+  border: 1px dashed black;
+  color: #eeeeee;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons a.gt-fa {
+  color: #d4d4d4;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons a.gt-fa:hover {
+  color: #eeeeee;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-black .social-media-icons a.gt-fa:before:hover {
+  color: #eeeeee;
+}
+/* line 139, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white {
+  background-color: whitesmoke;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink a {
+  color: #777777;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink a:hover {
+  color: #919191;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: gainsboro;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons .empty {
+  border: 1px dashed #cfcfcf;
+  color: #777777;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons a.gt-fa {
+  color: #919191;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons a.gt-fa:hover {
+  color: #777777;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-white .social-media-icons a.gt-fa:before:hover {
+  color: #777777;
+}
+/* line 143, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy {
+  background-color: #023d7b;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink a {
+  color: #eeeeee;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink a:hover {
+  color: #d4d4d4;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: #0356ad;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons .empty {
+  border: 1px dashed #011830;
+  color: #eeeeee;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons a.gt-fa {
+  color: #d4d4d4;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons a.gt-fa:hover {
+  color: #eeeeee;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-navy .social-media-icons a.gt-fa:before:hover {
+  color: #eeeeee;
+}
+/* line 147, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold {
+  background-color: #eeb221;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink a {
+  color: #333333;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink a:hover {
+  color: #4d4d4d;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: #cc9510;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons .empty {
+  border: 1px dashed #b5840e;
+  color: #333333;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons a.gt-fa {
+  color: #4d4d4d;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons a.gt-fa:hover {
+  color: #333333;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding.gt-user-gold .social-media-icons a.gt-fa:before:hover {
+  color: #333333;
+}
+/* line 151, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .row {
+  padding: 0;
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/* line 159, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .gt-logo-wrapper {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  padding-right: 30px;
+  margin-left: 5px;
+}
+/* line 167, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity {
+  display: inline-block;
+}
+/* line 171, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity h1.gt-identity__logo {
+  margin-bottom: 0;
+  line-height: 1.0;
+}
+/* line 175, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity h1.gt-identity__logo a {
+  display: inline-block;
+}
+/* line 180, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #gt-identity img {
+  height: 40px;
+  width: auto;
+}
+
+/* line 187, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+/* line 194, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons {
+  list-style: none;
+  float: right;
+}
+/* line 198, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 202, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li a.gt-fa {
+  font-size: 15pt;
+  margin-left: 15px;
+  top: 0px;
+}
+/* line 207, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li a.gt-fa:hover {
+  text-decoration: none;
+}
+/* line 212, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons li a.gt-fa:before:hover {
+  text-decoration: none;
+}
+/* line 218, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons .empty {
+  margin-top: 8px;
+  padding: 5px 10px;
+  font-size: 8pt;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 225, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-google-plus {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-google-plus:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f0d5";
+}
+/* line 229, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-facebook {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-facebook:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f230";
+}
+/* line 233, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-twitter {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-twitter:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f099";
+}
+/* line 237, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-pinterest {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-pinterest:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f0d2";
+}
+/* line 241, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-linkedin {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-linkedin:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f0e1";
+}
+/* line 245, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-youtube {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-youtube:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f167";
+}
+/* line 249, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-instagram {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-instagram:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f16d";
+}
+/* line 253, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-flickr {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-flickr:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f16e";
+}
+/* line 257, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-rss {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-rss:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f09e";
+}
+/* line 261, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-vine {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-vine:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f1ca";
+}
+/* line 265, sass/+partials/_theme/_gt-header.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-git {
+  position: relative;
+}
+/* line 37, sass/+includes/_mixins/_fa-icon.scss */
+.social-menus-wrapper .social-menus .social-media-icons a.gt-fa-git:before {
+  position: relative;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  content: "\f09b";
+}
+
+/***************************************************************************************/
+/* Import */
+/***************************************************************************************/
+/* line 275, sass/+partials/_theme/_gt-header.scss */
+#utility-links {
+  display: block;
+  float: left;
+}
+
+
+
+@media (max-width: 600px) {
+  /* line 275, sass/+partials/_theme/_gt-header.scss */
+  #utility-links {
+    display: none;
+  }
+}
+
+/* line 284, sass/+partials/_theme/_gt-header.scss */
+.ulink {
+  display: inline-block;
+}
+/* line 287, sass/+partials/_theme/_gt-header.scss */
+.ulink a {
+  display: inline-block;
+  font-size: 8pt;
+  font-weight: 400;
+  margin: 0;
+  padding: 8px 10px;
+  position: relative;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* line 300, sass/+partials/_theme/_gt-header.scss */
+#utility-links .ulink a:link, #utility-links .ulink a:visited {
+  text-decoration: none;
+}
+
+/* line 301, sass/+partials/_theme/_gt-header.scss */
+#utility-links .ulink a:hover, #utility-links .ulink a:active {
+  background-color: #f5f5f5;
+}
+
+/* line 302, sass/+partials/_theme/_gt-header.scss */
+#social-media-links {
+  float: right;
+}
+
+/* line 303, sass/+partials/_theme/_gt-header.scss */
+#social-media-links a {
+  background: url("../images/icons/icon-sm-outlet-default.png") no-repeat left center;
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  padding: 30px 0 0 0;
+  margin: 5px;
+  width: 30px;
+}
+
+/* line 316, sass/+partials/_theme/_gt-header.scss */
+#utility-links .mothership a:before,
+#utility-links .campus-map a:before,
+#utility-links .offices a:before,
+#utility-links .directories a:before,
+#utility-links .pwp a:before {
+  color: #8C8C8C;
+  content: '\f0a8';
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: normal;
+  left: 0px;
+  line-height: 1;
+  position: relative;
+  text-decoration: none;
+  top: 2px;
+  padding-right: 0px;
+  width: 20px;
+  text-align: center;
+}
+
+/* line 334, sass/+partials/_theme/_gt-header.scss */
+#utility-links .mothership a:before {
+  content: '\f015';
+}
+
+/* line 335, sass/+partials/_theme/_gt-header.scss */
+#utility-links .campus-map a:before {
+  content: '\f041';
+}
+
+/* line 336, sass/+partials/_theme/_gt-header.scss */
+#utility-links .offices a:before {
+  content: '\f0f7';
+}
+
+/* line 337, sass/+partials/_theme/_gt-header.scss */
+#utility-links .directories a:before {
+  content: '\f007';
+}
+
+/* line 338, sass/+partials/_theme/_gt-header.scss */
+#utility-links .pwp a:before {
+  content: "\f015";
+}
+
+/* line 340, sass/+partials/_theme/_gt-header.scss */
+#utility-links .menu {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 345, sass/+partials/_theme/_gt-header.scss */
+#utility-links .ulink {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+/***************************************************************************************/
+/* Theme Overrides */
+/***************************************************************************************/
+/* line 4, sass/+partials/_theme/_header_override.scss */
+body .site-container .site-header {
+  position: relative;
+  top: 0;
+}
+
+/* line 9, sass/+partials/_theme/_header_override.scss */
+body.admin-bar .site-header {
+  top: 0;
+}
+
+/***************************************************************************************/
+/* Default Color Schema */
+/***************************************************************************************/
+/* line 16, sass/+partials/_theme/_header_override.scss */
+#gt-branding {
+  background-color: whitesmoke;
+  max-height: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 31, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #utility-links .ulink {
+  display: inline;
+}
+/* line 34, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #utility-links .ulink a {
+  color: #777777;
+}
+/* line 38, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #utility-links .ulink a:hover {
+  color: #919191;
+}
+/* line 47, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #utility-links .ulink:after {
+  content: '\f142';
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-size: 0.9em;
+  color: gainsboro;
+}
+/* line 68, sass/+partials/_theme/_gt-header.scss */
+#gt-branding #utility-links .last:after {
+  display: none;
+  font-size: 0;
+}
+/* line 73, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .branding-menus-wrapper {
+  float: right;
+  margin-top: 5px;
+}
+/* line 79, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .social-media-icons .empty {
+  border: 1px dashed #cfcfcf;
+  color: #777777;
+}
+/* line 84, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .social-media-icons a.gt-fa {
+  color: #919191;
+}
+/* line 92, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .social-media-icons a.gt-fa:hover {
+  color: #777777;
+}
+/* line 97, sass/+partials/_theme/_gt-header.scss */
+#gt-branding .social-media-icons a.gt-fa:before:hover {
+  color: #777777;
+}
+/* line 19, sass/+partials/_theme/_header_override.scss */
+#gt-branding a {
+  border-bottom: 0;
+}
+/* line 22, sass/+partials/_theme/_header_override.scss */
+#gt-branding a:hover {
+  border-bottom: 0;
+}
+
+/* all sass files */
