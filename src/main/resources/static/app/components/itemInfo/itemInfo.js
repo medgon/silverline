@@ -2,14 +2,14 @@
 	'use strict';
 	angular.module('app').component('itemInfo', {
 		templateUrl: '/silverline/app/components/itemInfo/itemInfo.html', 
-		controller: ItemController; 
+		controller: ItemController
 	});
 	
 	function ItemController(itemService) { 
 
 		this.getItems = function(){
 
-				itemService.getAllItems(function(data){
+				itemService.getItem(function(data){
 					this.item = data;
 					console.log(this.item);
 
