@@ -1,25 +1,151 @@
-<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white d-inline-block clean-navbar" style="padding-bottom: 0px">
-     <div class="container-fluid">
-     	<a class="navbar-brand text-monospace logo" href="#">
-     		<h4>SilverLine</h4>
-     	</a>
-   		<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color:#ffffff;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-         <div class="collapse navbar-collapse" id="navcol-1">
-             <ul class="nav navbar-nav ml-auto" style="padding-bottom: 10px">
-                 <li class="nav-item" role="presentation" data-bs-hover-animate="pulse" style="padding-right:0px;"><a class="nav-link active" href="report.html" data-bs-hover-animate="pulse"><i class="fa fa-clock-o"></i>&nbsp;Report</a></li>
-                 <li class="nav-item" role="presentation" data-bs-hover-animate="pulse" style="padding-right:0px;"><a class="nav-link" href="index.html" data-bs-hover-animate="pulse" ><i class="fa fa-home"></i>&nbsp;Home</a></li>
-                 <li class="nav-item" role="presentation" data-bs-hover-animate="pulse" style="padding-right:0px;"><a class="nav-link" href="index.html" ><i class="fa fa-book"></i>&nbsp;about</a></li>
-                 <li class="nav-item" role="presentation" data-bs-hover-animate="pulse" style="padding-right:0px;"><a class="nav-link" href="index.html" ><i class="fa fa-question"></i>&nbsp;support</a></li>
-                 <li class="nav-item" role="presentation" data-bs-hover-animate="pulse" style="padding-right:0px;"><a class="nav-link" href="index.html" ><i class="fa fa-sign-out"></i>&nbsp;logout</a></li>
-             </ul>
-     </div>
-     </div>
- </nav>
- 
- <style>
- 	nav{
- 		padding-bottom: 0px;
- 		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
- 	}
- 	
- </style>
+<!-- Top line -->
+<div class="dashb-03-top-navigation affix">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-theme">
+
+        <!-- Menu Button -->
+        <div class="menu-button">
+            <a href="#" id="dashb-03-toggle" class="dashb-03-toggle menu-toggle open">
+                <div class="menu-icon">
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                </div>
+            </a>
+        </div>
+        <!-- /Menu Button -->
+
+        <!-- Navbar Header -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#page-header-navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- /Navbar Header -->
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="page-header-navigation">
+
+            <!-- Navigation Right -->
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- Messages -->
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle no-caret nav-notification" data-toggle="dropdown">
+                        <i class="icon icon-inline fa fa-envelope-open-o hidden-xs"></i>
+                        <span class="hidden-sm hidden-md hidden-lg">Notifications</span>
+                        <span class="badge badge-danger badge-notification">7</span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right navbar-notifications-dropdown">
+
+                        <li class="title">New Messages</li>
+
+                        <li>
+                            <a href="#" class="notification">
+                                <div class="avatar image">
+                                    <img src="images/avatar-02.jpg" alt="">
+                                </div>
+                                <div class="user-name">Lori Harrison</div>
+                                <p class="text">
+                                    It is a long established fact that a reader will be distracted by the readable content...
+                                </p>
+                                <div class="date">today 08:27 PM</div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="notification">
+                                <div class="avatar image">
+                                    <img src="images/avatar-03.jpg" alt="">
+                                </div>
+                                <div class="user-name">Phillip Cole</div>
+                                <p class="text">
+                                    It is a long established fact that a reader will be distracted by the readable content...
+                                </p>
+                                <span class="label label-danger"><i class="icon fa fa-exclamation-triangle"></i> Important</span>
+                                <div class="date">today 08:27 PM</div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="notification">
+                                <div class="avatar image">
+                                    <img src="images/avatar-04.jpg" alt="">
+                                </div>
+                                <div class="user-name">Ann James</div>
+                                <p class="text">
+                                    It is a long established fact that a reader will be distracted by the readable content...
+                                </p>
+                                <div class="date">today 08:27 PM</div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-menu-footer text-right">
+                            <button class="btn btn-t btn-waves btn-xs btn-danger">Clear</button>
+                            <button class="btn btn-t btn-waves btn-xs btn-primary">See all</button>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <!-- /Messages -->
+
+                <!-- Profile -->
+                <li class="dropdown">
+
+                    <!-- Profile avatar -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div class="profile-avatar">
+                            <img src="images/avatar-01.jpg" alt="">
+                        </div>
+                        <span class="user-name">Bryan</span>
+                    </a>
+                    <!-- /Profile avatar -->
+
+                    <!-- Profile dropdown menu -->
+                    <ul class="dropdown-menu dropdown-menu-right">
+
+                        <li>
+                            <a href="#"><i class="icon icon-inline fa fa-address-card-o"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#" class="has-badge">
+                                <i class="icon icon-inline fa fa-envelope-o"></i> Inbox
+                                <span class="badge badge-notification badge-danger">3</span>
+                            </a>
+                        </li>
+                        <li><a href="#"><i class="icon icon-inline fa fa-tasks"></i> Tasks</a></li>
+                        <li><a href="#"><i class="icon icon-inline fa fa-sign-out"></i> Sign out</a></li>
+                    </ul>
+                    <!-- /Profile dropdown menu -->
+
+                </li>
+                <!-- /Profile -->
+
+            </ul>
+            <!-- /Navigation Right -->
+
+            <!-- Search Form -->
+            <form class="navbar-form navbar-form-toggleable navbar-right">
+                <div class="navbar-form-toggle-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+                <button class="btn btn-primary-dark btn-waves btn-icon navbar-form-toggle"><i class="icon fa fa-search"></i> </button>
+            </form>
+            <!-- /Search Form -->
+
+        </div>
+        <!-- /Navbar Content -->
+
+    </nav>
+    <!-- /Navigation -->
+
+</div>
+<!-- /Top line -->
