@@ -1,0 +1,73 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.widget-card-box {
+
+} // .widget-card-box
+
+.widget-card-box .widget-heading {
+
+  .widget-title {
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+
+    color: #fff;
+
+  } // .widget-title
+
+  .widget-tags {
+
+    @extend .custom-list-inline;
+
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    z-index: 1;
+
+    .tag {
+      @extend .label;
+      @extend .label-dark;
+      background: rgba(0, 0, 0, .8);
+    } // .tag
+
+  } // .widget-tags
+
+} // .widget-heading
+
+.widget-card-box .widget-media {
+
+  overflow: hidden;
+  margin: -15px;
+
+  img {
+    width: 100%;
+  } // img
+
+  &::after {
+
+    display: block;
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: fade-out($color-dark, .5);
+
+  } // &::after
+
+} // .widget-card-box .widget-media

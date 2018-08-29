@@ -1,0 +1,140 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ===========
+
+.info-box {
+
+  display: block;
+  position: relative;
+
+  margin-bottom: $offset;
+  padding-left: 80px;
+
+  overflow: hidden;
+  background: #fff;
+
+  @include clearfix();
+  @include border-radius($border-radius);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+} // .info-box
+
+.info-box-left {
+
+  padding: 15px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 80px;
+  height: 100%;
+
+  color: #fff;
+
+  background: $color-default;
+
+} // .info-box-left
+
+.info-box-content {
+
+  padding: 15px;
+
+} // .info-box-content
+
+
+
+//
+// Content
+// =======
+
+.info-box-price {
+
+  line-height: 1;
+  font-size: 1.5em;
+
+} // .info-box-price
+
+.info-box-datetime {
+
+  position: absolute;
+  bottom: 15px;
+
+  font-size: $font-size-small;
+
+  span {
+
+    @extend .text-muted;
+
+    display: block;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+
+  } // span
+
+} // .info-box-datetime
+
+.info-box-heading {
+
+  margin-bottom: $offset;
+
+  .title {
+    @extend .h4;
+    margin-bottom: -5px;
+    color: $color-text-heading;
+  } // .title
+
+  .subtitle {
+    @extend .text-muted;
+    font-size: $font-size-small;
+  } // .subtitle
+
+} // .info-box-heading
+
+.info-box-information {
+
+  .title {
+
+    @extend .text-muted;
+
+    display: block;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+
+  } // .title
+
+  .value {
+
+  } // .value
+
+} // .info-box-information
+
+
+
+//
+// Alternate colors
+// ================
+
+@include info-box-colored(info-box-primary,         $color-primary        );
+@include info-box-colored(info-box-secondary,       $color-secondary      );
+@include info-box-colored(info-box-primary-light,   $color-primary-light  );
+@include info-box-colored(info-box-secondary-light, $color-secondary-light);
+@include info-box-colored(info-box-primary-dark,    $color-primary-dark   );
+@include info-box-colored(info-box-secondary-dark,  $color-secondary-dark );
+@include info-box-colored(info-box-default,         $color-default        );
+@include info-box-colored(info-box-success,         $color-success        );
+@include info-box-colored(info-box-info,            $color-info           );
+@include info-box-colored(info-box-warning,         $color-warning        );
+@include info-box-colored(info-box-danger,          $color-danger         );
+@include info-box-colored(info-box-light,           $color-light          );
+@include info-box-colored(info-box-dark,            $color-dark           );

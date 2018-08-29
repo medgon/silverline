@@ -1,0 +1,139 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ============
+
+.widget {
+
+  display: block;
+  margin-bottom: $offset;
+
+  overflow: hidden;
+  position: relative;
+
+  background: #fff;
+
+  @include clearfix();
+  @include border-radius($border-radius);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+} // .widget
+
+
+.widget-heading {
+
+  position: relative;
+  padding: 15px;
+
+  @include clearfix();
+
+  .widget-title {
+    @extend .h4;
+    margin-bottom: -5px;
+  } // .widget-title\
+
+  .widget-subtitle {
+    font-size: $font-size-small;
+  } // .widget-subtitle
+
+} // .widget-heading
+
+.widget-body {
+
+  padding: 35px 15px;
+  @include clearfix();
+
+} // .widget-body
+
+.widget-footer {
+  position: relative;
+  padding: 20px 15px;
+  background: $color-light;
+  border-top: solid 1px $color-border;
+} // .widget-footer
+
+
+//
+// Media elements
+// ==============
+
+.media-element {
+
+  display: block;
+
+  margin: -15px;
+
+  &.image, .image {
+    max-width: none;
+  } // &.image, .image
+
+} // .media-element
+
+
+//
+// Additional
+// ==========
+
+.widget-heading-icons {
+
+  display: block;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  z-index: 2;
+
+  a {
+
+    color: #fff;
+
+    &:hover, &:focus {
+      color: rgba(255, 255, 255, .8);
+    } // &:hover, &:focus
+
+  } // a
+
+  > li {
+    display: inline-block;
+    margin-left: 5px;
+  } // > li
+
+} // .widget-heading-icons
+
+.widget-heading-button {
+
+  position: absolute;
+  bottom: -23px;
+  right: 15px;
+
+} // .widget-heading-button
+
+.widget-footer-title {
+
+  position: absolute;
+  top: -15px;
+  left: 15px;
+
+  padding: .3em .9em;
+  text-transform: uppercase;
+
+  background: #fff;
+  border: solid 1px $color-border;
+
+  @include border-radius(15px);
+
+} // .widget-footer-title

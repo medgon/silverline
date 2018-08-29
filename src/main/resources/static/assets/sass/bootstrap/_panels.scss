@@ -1,0 +1,141 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ===========
+
+.panel {
+
+  border: solid 1px $color-border;
+
+  @include border-radius($border-radius);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+} // .panel
+
+.panel-heading {
+
+  position: relative;
+  padding: 15px;
+  border: none;
+
+  @include clearfix();
+  @include border-radius(0);
+
+  .panel-title {
+
+    @extend .h4;
+
+    float: left;
+    margin: 0;
+
+    @include media_sm() {
+      float: none;
+    } // @include media_sm()
+
+  } // .panel-title
+
+} // .panel-heading
+
+.panel-body {
+  padding: 15px;
+} // .panel-body
+
+.panel-footer {
+  padding: 15px;
+  background: $color-light;
+} // .panel-footer
+
+
+
+//
+// Panel groups
+// ============
+
+.panel-group {
+
+  margin-bottom: $offset;
+
+  .panel-heading {
+
+    + .panel-collapse > .panel-body,
+    + .panel-collapse > .list-group {
+      border: none;
+    } //
+
+  } // .panel-heading
+
+} // .panel-group
+
+
+
+//
+// Panel without borders
+// =====================
+
+.panel-no-border {
+  border: none;
+} // .panel-no-border
+
+
+
+//
+// Cover blocks
+// ============
+
+.panel-block-cover {
+
+  margin: 0 -15px;
+
+  border: none !important;
+  @include box-shadow(none !important);
+
+} // .panel-block-cover
+
+
+
+//
+// Panel heading extends
+// =====================
+
+.panel-filters {
+
+  float: right;
+  margin-top: 1px;
+
+  .btn, .btn-group {
+    @include box-shadow(none);
+  } // .btn, .btn-group
+
+  @include media_sm() {
+    float: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } // @include media_sm()
+
+} // .panel-filters
+
+
+
+//
+// Alternate colors
+// ================
+
+@include panel-colored(panel-primary,   $color-primary  );
+@include panel-colored(panel-secondary, $color-secondary);
+@include panel-colored(panel-default,   $color-default  );
+@include panel-colored(panel-success,   $color-success  );
+@include panel-colored(panel-info,      $color-info     );
+@include panel-colored(panel-warning,   $color-warning  );
+@include panel-colored(panel-danger,    $color-danger   );
+@include panel-colored(panel-light,     $color-light    );
+@include panel-colored(panel-dark,      $color-dark     );
+@include panel-colored(panel-white,     #fff            );

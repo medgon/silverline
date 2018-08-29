@@ -1,0 +1,76 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+@mixin btn-colored($class, $color) {
+
+  .#{$class} {
+
+    color: #fff;
+    background: $color;
+    border-color: $color;
+
+    &.btn-tc { color: $color; }
+
+    &:hover, &.hover {
+      color: #fff;
+      border-color: md-brighten($color);
+      background-color: md-brighten($color);
+    } // &:hover, &.hover
+
+    &:active, &.active{
+      color: #fff;
+      border-color: md-brighten($color);
+      background-color: md-brighten($color);
+    } // &:hover, &.hover
+
+    &:focus, &.focus {
+      color: #fff;
+      border-color: md-darken($color);
+      background-color: md-darken($color);
+    } // &:focus, &.focus
+
+    &[disabled], &.disabled {
+      opacity: .7;
+      background: $color;
+      border-color: $color;
+    } // &[disabled], &.disabled
+
+  } // .#{$class}
+
+  .open > .dropdown-toggle.#{$class} {
+    color: #fff;
+    border-color: md-darken($color);
+    background-color: md-darken($color);
+  } // .open > .dropdown-toggle.#{$class}
+
+  .#{$class}.active,
+  .#{$class}:active,
+  .open > .dropdown-toggle.#{$class} {
+    color: #fff;
+    border-color: md-darken($color);
+    background-color: md-darken($color);
+  } // .#{$class}.active, .#{$class}:active, .open > .dropdown-toggle.#{$class}
+
+  .#{$class}.active.focus,
+  .#{$class}.active:focus,
+  .#{$class}.active:hover,
+  .#{$class}.focus:active,
+  .#{$class}:active:focus,
+  .#{$class}:active:hover,
+  .open > .dropdown-toggle.#{$class}.focus,
+  .open > .dropdown-toggle.#{$class}:focus,
+  .open > .dropdown-toggle.#{$class}:hover {
+
+    color: #fff;
+    border-color: md-darken($color);
+    background-color: md-darken($color);
+  } // ...
+
+} // @mixin btn-colored($class, $color)

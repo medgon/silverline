@@ -1,0 +1,170 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// General
+// =======
+
+@import 'includes/imports';
+@import 'includes/variables';
+@import 'includes/xbrowser';
+@import 'includes/media';
+
+
+
+//
+// Mixins
+// ======
+
+// Bootstrap
+@import 'mixins/bootstrap/clearfix';
+@import 'mixins/bootstrap/text-emphasis';
+@import 'mixins/bootstrap/navbar';
+@import 'mixins/bootstrap/badges';
+@import 'mixins/bootstrap/labels';
+@import 'mixins/bootstrap/buttons';
+@import 'mixins/bootstrap/panels';
+@import 'mixins/bootstrap/progress-bars';
+@import 'mixins/bootstrap/alerts';
+@import 'mixins/bootstrap/page-header';
+@import 'mixins/bootstrap/list-group-item';
+@import 'mixins/bootstrap/bg';
+
+// Theme
+@import 'mixins/theme/icons';
+@import 'mixins/theme/info-box';
+@import 'mixins/theme/sidebar';
+
+// MD
+@import 'mixins/md/radio';
+@import 'mixins/md/checkbox';
+
+
+//
+// Template
+// ========
+
+@import 'theme/general';
+@import 'theme/helper';
+@import 'theme/typography';
+
+@import 'theme/animations';
+@import 'theme/icons';
+@import 'theme/gallery';
+@import 'theme/progress-circle';
+@import 'theme/preloader';
+
+@import 'theme/styleswitcher';
+
+
+
+//
+// Bootstrap
+// =========
+
+@import 'bootstrap/navbar';
+@import 'bootstrap/forms';
+@import 'bootstrap/badges';
+@import 'bootstrap/labels';
+@import 'bootstrap/buttons';
+@import 'bootstrap/button-groups';
+@import 'bootstrap/modals';
+@import 'bootstrap/breadcrumbs';
+@import 'bootstrap/pagination';
+@import 'bootstrap/dropdowns';
+@import 'bootstrap/tabs';
+@import 'bootstrap/panels';
+@import 'bootstrap/progress-bars';
+@import 'bootstrap/list-groups';
+@import 'bootstrap/popovers';
+@import 'bootstrap/tooltips';
+@import 'bootstrap/navs';
+@import 'bootstrap/alerts';
+@import 'bootstrap/page-header';
+@import 'bootstrap/tables';
+
+
+
+//
+// Layout
+// ======
+
+@import 'layout/layout';
+@import 'layout/layout-dashboard';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/section';
+@import 'layout/page-overlay';
+
+
+
+//
+// Elements
+// ========
+
+@import 'elements/menu-toggle';
+
+
+
+//
+// Widgets
+// =======
+
+@import 'widgets/widget';
+@import 'widgets/icon-boxes';
+@import 'widgets/card-boxes';
+@import 'widgets/rates';
+@import 'widgets/list-dot';
+@import 'widgets/testimonials';
+@import 'widgets/plan';
+@import 'widgets/list-animated';
+
+@import 'widgets/blog';
+@import 'widgets/info-box';
+@import 'widgets/widget-summary-statistics';
+@import 'widgets/widget-tasks';
+@import 'widgets/widget-card-box';
+
+
+
+//
+// Custom components
+// =================
+
+@import 'theme/custom-form';
+
+
+
+//
+// External components
+// ===================
+
+@import 'external/owl-carousel';
+@import 'external/custom-scrollbar';
+
+
+
+//
+// MD Custom components
+// ====================
+
+@import 'md/input';
+@import 'md/radio';
+@import 'md/checkbox';
+@import 'md/form';
+
+
+
+//
+// Sections
+// ========
+
+

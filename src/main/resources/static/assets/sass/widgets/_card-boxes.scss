@@ -1,0 +1,45 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.card-box {
+
+  display: block;
+  position: relative;
+
+  margin: 0 15px 0;
+  padding: 30px 15px;
+
+  background: #fff;
+
+  @include border-radius(7px);
+  @include box-shadow(2px 1px 15px rgba(0, 0, 0, .3));
+
+  .card-box-heading {
+
+    margin-bottom: $offset;
+
+    text-align: center;
+
+    .icon {
+      margin-bottom: $offset;
+      font-size: 5em;
+    } // .icon
+
+    .title {
+      @extend .h4;
+    } // .title
+
+  } // .card-box-heading
+
+  .card-box-content {
+    text-align: left;
+  } // .card-box-content
+
+} // .card-box

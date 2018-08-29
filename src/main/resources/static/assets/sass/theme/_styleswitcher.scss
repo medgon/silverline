@@ -1,0 +1,93 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+
+.styleswitcher {
+
+  position: fixed;
+  top: 50%;
+  right: 0;
+
+  z-index: 10000;
+
+  color: #fff;
+  background: rgba(0, 0, 0, .8);
+
+  @include transform(translateY(-50%) translateX(100%));
+  @include transition(all .2s linear);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+  &.styleswitcher-open {
+    @include transform(translateY(-50%));
+  } // &.styleswitcher-open
+
+  .styleswitcher-body {
+    width: 170px;
+    padding: 20px 15px 15px 20px;
+    @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+  } // .styleswitcher-body
+
+  .styleswitcher-title {
+    @extend .h4;
+  } // .styleswitcher-title
+
+  .toggle-styleswitcher {
+
+    position: absolute;
+    top: 0;
+    left: -50px;
+
+    width: 50px;
+    height: 50px;
+    z-index: 9998;
+
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+
+    @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+    .icon {
+      font-size: 14px;
+    } // .icon
+
+  } // .toggle-styleswitcher
+
+  .colors-list {
+
+    list-style: none;
+    margin: 0 0 2px;
+    padding: 0;
+
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+
+    &:last-child { margin: 0; }
+
+    li {
+
+      display: inline-block;
+      margin: 0 5px 5px 0;
+
+      a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        @include border-radius($border-radius);
+      } // a
+
+    } // li
+
+  } // .colors-list
+
+} // .styleswitcher
+

@@ -1,0 +1,36 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// General
+// =======
+
+.badge {
+  padding: .3em .5em;
+  font-weight: $font-weight-primary;
+  background-color: $color-primary;
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+} // .badge
+
+
+
+//
+// Alternate colors
+// ================
+
+@include badge-colored(badge-primary,   $color-primary  );
+@include badge-colored(badge-secondary, $color-secondary);
+@include badge-colored(badge-default,   $color-default  );
+@include badge-colored(badge-success,   $color-success  );
+@include badge-colored(badge-info,      $color-info     );
+@include badge-colored(badge-warning,   $color-warning  );
+@include badge-colored(badge-danger,    $color-danger   );
+@include badge-colored(badge-light,     $color-light    );
+@include badge-colored(badge-dark,      $color-dark     );

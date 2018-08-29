@@ -1,0 +1,174 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+@mixin navbar-colored($class, $color) {
+
+  $_color-text: md-foreground-color($color, $color-text, $color-text-light);
+  $_bg-hover:   md-darken($color);
+
+  .#{$class} {
+
+    background: $color none;
+    @include box-shadow(none);
+
+
+
+    @include media_sm() {
+
+      color: $_color-text;
+
+      // Buttons
+      .btn.btn-t {
+        color: $_color-text;
+      } // .btn.btn-t
+
+    } // @include media_sm()
+
+
+
+    //
+    // Navigation
+    // ==========
+
+    .navbar-nav {
+
+      > li > a {
+
+        color: $_color-text;
+
+        &:hover, &:focus {
+          color: $_color-text;
+          background: $_bg-hover none;
+        } // &:hover, &:focus
+
+      } // > li > a
+
+      > .active > a {
+        &, &:hover, &:focus {
+          color: $_color-text;
+          background: $_bg-hover none;
+        } // &, &:hover, &:focus
+      } // > .active > a
+
+      > .disabled > a {
+        &, &:hover, &:focus {
+          color: $_color-text;
+          background: $_bg-hover none;
+        } // &, &:hover, &:focus
+      } // > .active > a
+
+    } // .navbar-nav
+
+
+
+    //
+    // Form controls
+    // =============
+
+    .form-control {
+
+      color: $_color-text;
+
+      @include placeholder{
+        color: $_color-text;
+        opacity: $placeholder-opacity;
+      } // @include placeholder
+
+      &:hover, &:focus {
+        border-color: #fff;
+      } // &:hover, &:focus
+
+    } // .form-control
+
+
+
+    //
+    // Navbar brand
+    // ============
+
+    .navbar-brand {
+
+      color: $_color-text;
+
+      &:hover, &:focus {
+        color: $_color-text;
+        //background: md-darken($color) none;
+      } // &:hover, &:focus
+
+    } // .navbar-brand
+
+
+
+    //
+    // Text elements
+    // =============
+
+    .navbar-text {
+      color: $_color-text;
+    } // .navbar-text
+
+
+
+    //
+    // Dropdown items
+    // ==============
+
+    .navbar-nav {
+
+      > .open > a {
+        &, &:hover, &:focus {
+          color: $_color-text;
+          background: $_bg-hover none;
+        } // &, &:hover, &:focus
+      } // > .open > a
+
+      @include media_sm() {
+
+        .open .dropdown-menu {
+
+          background: $color;
+
+          a {
+
+            &, :hover, &:focus {
+              color: $_color-text;
+            } // &, :hover, &:focus
+
+          } // a
+
+          li a {
+            &:hover, &:focus {
+              background: $_bg-hover none;
+            } // &:hover, &:focus
+          } // li a
+
+        } // .open .dropdown-menu
+
+      } // @include media_sm()
+
+    } // .navbar-nav
+
+
+
+    //
+    // Menu toggle button
+    // ==================
+
+    .menu-toggle .menu-icon span {
+      background: $_color-text;
+    } // .menu-toggle span
+
+    .navbar-toggle .icon-bar {
+      background: $_color-text;
+    } // .navbar-toggle .icon-bar
+
+  } // .#{$class}
+
+} // @mixin navbar-colored($class, $color)

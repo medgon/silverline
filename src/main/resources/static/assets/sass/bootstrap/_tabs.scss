@@ -1,0 +1,110 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Tab Navigation
+// ==============
+
+.nav-tabs {
+
+  border-bottom: solid 1px transparent;
+
+  li {
+
+    a {
+
+      position: relative;
+      color: $color-text;
+
+      border-width: 0 0 1px !important;
+      border-color: transparent !important;
+
+      @include border-radius(0);
+
+      &:hover, &:focus {
+        color: $color-primary;
+        background-color: transparent !important;
+      } // &:hover, &:focus
+
+      &::after {
+
+        display: block;
+        content: '';
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: auto;
+
+        width: 0;
+        height: 2px;
+
+        background: $color-primary;
+
+        @include transition($default-transition);
+
+      } // &::after
+
+    } // a
+
+    &.active {
+
+      a {
+
+        color: $color-primary;
+        background-color: transparent !important;
+
+        &::after {
+          width: 100%;
+        } // &::after
+
+      } // a
+
+      a:hover, a:focus {
+        color: $color-primary;
+        background-color: transparent !important;
+      } // a, a:hover, a:focus
+
+    } // &.active
+
+  } // li
+
+} // .nav-tabs
+
+
+
+//
+// Tab content
+// ===========
+
+.tab-content {
+  padding: $offset 0;
+} // .tab-content
+
+
+
+//
+// Icons for nav
+// =============
+.nav-tabs.nav-tabs-icons {
+
+  .icon {
+
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 1.5em;
+    text-align: center;
+
+  } // .icon_block
+
+} // .nav-tabs

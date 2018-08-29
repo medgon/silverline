@@ -1,0 +1,44 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.rate {
+
+  text-align: center;
+
+  .rate-text {
+
+    @extend .text-muted;
+
+    display: block;
+
+    line-height: 1;
+    color: $color-text;
+    font-size: $font-size-small;
+    font-weight: $font-weight-primary-bold;
+
+  } // .rate-text
+
+  .rate-stars {
+
+    list-style: none;
+    margin: $offset 5px 0 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    } // li
+
+    .icon {
+      color: $color-warning;
+    } // .icon
+
+  } // .rate-stars
+
+} // .rate

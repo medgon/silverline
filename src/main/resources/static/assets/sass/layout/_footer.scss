@@ -1,0 +1,139 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+//
+// Main styles
+// ===========
+
+.footer {
+
+  padding-top: 50px;
+  padding-bottom: 0;
+
+  .footer-column {
+
+    margin-bottom: $offset;
+
+    .column-title {
+      @extend .h4;
+      margin-bottom: $offset;
+    } // .column-title
+
+  } // .footer-column
+
+  .footer-bottom-line {
+
+    margin-top: 20px;
+    line-height: 50px;
+    
+    @include media_sm() {
+      text-align: center;
+    } // @include media_sm()
+    
+  } // .footer-bottom-line
+
+} // .footer
+
+
+
+// ------------------------------------------------------------------------------------------------------------------- /
+//
+// Footer widgets
+//
+// ------------------------------------------------------------------------------------------------------------------- /
+
+//
+// Footer menu
+// ==============
+
+.footer .footer-menu {
+
+  margin-bottom: 0;
+
+  .list-dot-item {
+    padding-bottom: 8px;
+  } // .list-dot-item
+
+} // .footer .footer-menu
+
+
+
+//
+// Footer bottom line links
+// ========================
+
+.footer .links {
+
+  text-align: right;
+
+  @include media_sm() {
+    text-align: center;
+  } // @include media_sm()
+
+} // .footer .links
+
+
+/*
+ * Blog posts
+ */
+
+.footer .blog-post-small {
+
+  position: relative;
+  margin: 0 0 $offset / 2;
+  max-width: 380px;
+  height: 80px;
+
+  overflow: hidden;
+
+  .image {
+
+    width: 70px;
+    height: 70px;
+
+    @include border-radius($border-radius);
+    @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    } // img
+
+  } // .image
+
+  .post-title {
+    @extend .h5;
+    margin-bottom: 5px;
+    color: $color-text-heading;
+  } // .post-title
+
+  .post-content {
+    padding-right: 70px;
+  } // .post-content
+
+  .post-right {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding-right: 5px;
+
+    width: 60px;
+    text-align: right;
+
+    .post-datetime {
+      @extend .text-muted;
+      margin-bottom: 5px;
+      font-size: $font-size-small;
+    } // .post-datetime
+
+  } // .post-right
+
+} // .footer .blog-post-small

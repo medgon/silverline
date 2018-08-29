@@ -1,0 +1,40 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+@mixin md-radio-colored($class, $color) {
+
+  .#{$class} {
+
+    input[type="radio"] {
+
+      & + label {
+
+        &::before { }
+        &::after  { background: $color; }
+
+        &:hover {
+          &::before { border-color: $color; }
+          &::after  { }
+        } // &:hover
+
+      } // & + label
+
+      &:checked + label {
+
+        &::before { border-color: $color; }
+        &::after  { }
+
+      } // &:checked + label
+
+    } // input[type="radio"]
+
+  } // .#{$class}
+
+} // @mixin md-radio-colored($class, $color)

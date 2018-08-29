@@ -1,0 +1,272 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+//
+// Offsets
+// =======
+
+.mt     { margin-top:     $offset      !important; }
+.mt-0p5 { margin-top:     $offset * .5 !important; }
+.mt-2x  { margin-top:     $offset *  2 !important; }
+.mt-3x  { margin-top:     $offset *  3 !important; }
+.mt-4x  { margin-top:     $offset *  4 !important; }
+
+.pt     { padding-top:    $offset      !important; }
+.pt-0p5 { padding-top:    $offset * .5 !important; }
+.pt-2x  { padding-top:    $offset *  2 !important; }
+
+.mb     { margin-bottom:  $offset      !important; }
+.mb-0p5 { margin-bottom:  $offset * .5 !important; }
+.mb-2x  { margin-bottom:  $offset *  2 !important; }
+
+.pb     { padding-bottom: $offset      !important; }
+.pb-0p5 { padding-bottom: $offset * .5 !important; }
+.pb-2x  { padding-bottom: $offset *  2 !important; }
+
+.no-mt  { margin-top:     0            !important; }
+.no-pt  { padding-top:    0            !important; }
+.no-mb  { margin-bottom:  0            !important; }
+.no-pb  { padding-bottom: 0            !important; }
+
+.no-margin  { margin:     0            !important; }
+.no-padding { padding:    0            !important; }
+
+
+
+//
+// Positions
+// =========
+
+.vertical-middle {
+
+  position: relative;
+
+  top: 50%;
+  @include transform(translateY(-50%));
+
+} // .vertical-middle
+
+
+
+//
+// Text additional
+// ===============
+
+.nowrap {
+  white-space: nowrap;
+  -ms-word-wrap: normal;
+      word-wrap: normal;
+} // .nowrap
+
+
+
+//
+// Icons
+// =====
+
+.icon {
+  display: inline-block;
+  font-size: 14px;
+} // .icon
+
+.icon-left  { margin-right: 5px; }
+.icon-right { margin-left:  5px; }
+
+
+
+//
+// Backgrounds
+// ===========
+
+@include bg-colored(bg-primary,         $color-primary        );
+@include bg-colored(bg-primary-light,   $color-primary-light  );
+@include bg-colored(bg-primary-dark,    $color-primary-dark   );
+@include bg-colored(bg-secondary,       $color-secondary      );
+@include bg-colored(bg-secondary-light, $color-secondary-light);
+@include bg-colored(bg-secondary-dark,  $color-secondary-dark );
+@include bg-colored(bg-default,         $color-default        );
+@include bg-colored(bg-success,         $color-success        );
+@include bg-colored(bg-info,            $color-info           );
+@include bg-colored(bg-warning,         $color-warning        );
+@include bg-colored(bg-danger,          $color-danger         );
+@include bg-colored(bg-light,           $color-light          );
+@include bg-colored(bg-dark,            $color-dark           );
+
+
+.bg-center-cover {
+  background: transparent none no-repeat scroll center center / cover;
+} // .bg-center-cover
+
+.bg-mask {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: transparent none no-repeat scroll center top / cover;
+
+} // .bg-mask
+
+//
+// Mask colors
+// ===========
+
+.bg-mask-primary         { background-color: $color-primary;        };
+.bg-mask-primary-light   { background-color: $color-primary-light;  };
+.bg-mask-primary-dark    { background-color: $color-primary-dark;   };
+.bg-mask-secondary       { background-color: $color-secondary;      };
+.bg-mask-secondary-light { background-color: $color-secondary-light;};
+.bg-mask-secondary-dark  { background-color: $color-secondary-dark; };
+.bg-mask-default         { background-color: $color-default;        };
+.bg-mask-success         { background-color: $color-success;        };
+.bg-mask-info            { background-color: $color-info;           };
+.bg-mask-warning         { background-color: $color-warning;        };
+.bg-mask-danger          { background-color: $color-danger;         };
+.bg-mask-light           { background-color: $color-light;          };
+.bg-mask-dark            { background-color: $color-dark;           };
+
+//
+// Images
+// ======
+
+.image {
+
+  max-width: 100%;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+  } // img
+
+  &.image-block {
+    display: block;
+    @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+  } // &.image-block
+
+} // .image
+
+
+
+//
+// Close button
+// ============
+
+button.close, .close {
+
+  position: relative;
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  opacity: .5;
+
+  @include transition($default-transition);
+
+  &::before {
+
+    display: block;
+    content: '\4d';
+
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'ElegantIcons', sans-serif;
+
+  } // &::before
+
+  &:hover, &:focus {
+
+    opacity: 1.0;
+
+    &::before {
+    } // &::before
+
+  } // &:hover, &:focus
+
+} // button.close, .close
+
+
+
+//
+// Separator
+// ========
+
+.separator {
+
+  margin-top: $offset;
+  margin-bottom: $offset;
+
+  border-color: $color-border;
+
+} // .separator
+
+
+
+//
+// Canvas Holder
+// =============
+
+.canvas-holder {
+
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto $offset;
+
+  @include media_min_width(1400px) {
+    width: 70%;
+  } // @include media_min_width(1400px)
+
+} // .canvas-holder
+
+
+
+//
+// Inline list (alternative var)
+// =============================
+
+.custom-list-inline {
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+
+    display: inline-block;
+
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+
+    &:first-child { margin-left: 0; }
+    &:last-child  { margin-right: 0; }
+
+  } // > li
+
+} // .custom-list-inline
+
+
+
+//
+// Custom background colors (w/o changing font color)
+// ==================================================
+
+.bg-custom-primary   { background-color: $color-primary   !important; };
+.bg-custom-secondary { background-color: $color-secondary !important; };
+.bg-custom-default   { background-color: $color-default   !important; };
+.bg-custom-success   { background-color: $color-success   !important; };
+.bg-custom-info      { background-color: $color-info      !important; };
+.bg-custom-warning   { background-color: $color-warning   !important; };
+.bg-custom-danger    { background-color: $color-danger    !important; };
+.bg-custom-light     { background-color: $color-light     !important; };
+.bg-custom-dark      { background-color: $color-dark      !important; };

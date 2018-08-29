@@ -1,0 +1,84 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Table blog posts list
+// =====================
+
+.table-blog-posts {
+
+  .tc-image {
+    width: 200px;
+    padding-right: 15px;
+  } // .tc-image
+
+  .tc-content {
+    padding-right: 15px;
+  } // .tc-content
+
+  .tc-author {
+    width: 70px;
+    text-align: center;
+  } // .tc-author
+
+  .tc-actions {
+    width: 90px;
+    text-align: right;
+  } // .tc-actions
+
+  > tbody > tr > td {
+    vertical-align: middle;
+  } // > tbody > tr > td
+
+} // .table-blog-posts
+
+.blog-post-table-row {
+
+  .post-title {
+    margin-bottom: 5px;
+    color: $color-text-heading;
+    font-weight: $font-weight-primary-bold;
+  } // .post-title
+
+  .post-datetime {
+    @extend .text-muted;
+    margin-bottom: 5px;
+    font-size: $font-size-small;
+  } // .post-datetime
+
+  .post-content {
+    margin-bottom: 15px;
+  } // .post-content
+
+  .post-actions {
+
+    @extend .custom-list-inline;
+
+    li {
+      margin-left: 10px;
+      margin-right: 0;
+    } // li
+
+    a {
+
+      color: $color-text;
+
+      &:hover, &:focus {
+        color: $color-primary;
+      } // &:hover, &:focus
+    } // a
+
+    .icon {
+      font-size: $font-size-icon-1p5x;
+    } // .icon
+
+  } // .post-actions
+
+} // .blog-post-table-row

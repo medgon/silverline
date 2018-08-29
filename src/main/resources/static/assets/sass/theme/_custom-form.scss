@@ -1,0 +1,59 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+//
+// Custom forms
+// ============
+
+.form-custom {
+
+  .form-group {
+    margin: 0 -15px 15px;
+    @include clearfix;
+  } // .form-group
+
+} // .form-custom
+
+
+
+//
+// Custom input group
+// ==================
+
+.custom-input-group {
+
+  position: relative;
+
+  border: solid 1px $color-border;
+  @include border-radius($border-radius);
+
+  .custom-input-group-addon {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding-top: 8px;
+
+    width: 30px;
+    text-align: center;
+
+  } // .custom-input-group-addon
+
+  .custom-form-control {
+
+    display: block;
+    padding: 9px 10px 9px 30px;
+    width: 100%;
+
+    border: none;
+
+  } // .custom-form-control
+
+} // .custom-input-group

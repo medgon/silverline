@@ -1,0 +1,26 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+@mixin panel-colored($class, $color) {
+
+  $_color-text: md-foreground-color($color, $color-text, #fff);
+
+  .#{$class} {
+
+    border-color: $color;
+
+    > .panel-heading {
+      color: $_color-text;
+      background: $color;
+    } // > .panel-heading
+
+  } // .#{$class}
+
+} // @mixin panel-colored($class, $color)

@@ -1,0 +1,61 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ===========
+
+.table {
+
+} // .table
+
+
+
+//
+// Table title
+// ===========
+
+.table-title {
+
+  margin-bottom: 5px;
+
+  text-align: right;
+  font-size: $font-size-small;
+  font-weight: $font-weight-primary-bold;
+
+} // .table-title
+
+
+
+//
+// Table w/o borders
+// =================
+
+.table-no-borders {
+
+  &, tr, td, th,
+  > tbody > tr > td {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+
+} // .table-no-borders
+
+
+
+//
+// No-wrap table
+// =============
+
+.table-nowrap {
+  word-wrap: normal;
+  white-space: nowrap;
+} // .table-nowrap

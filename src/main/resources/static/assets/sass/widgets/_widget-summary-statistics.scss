@@ -1,0 +1,88 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+.widget-summary-statistics {
+
+  margin-bottom: $offset;
+
+  .widget-value-big {
+
+    float: left;
+    margin-right: 10px;
+
+    font-size: 7em;
+    line-height: 1; //$line-height-base;
+
+    @include media_max_width(1350px) {
+      float: none;
+    } // media_max_width(1350px)
+
+    @include media_md() {
+      margin-bottom: $offset / 2;
+    } // @include media_md()
+
+  } //.widget-value-big
+
+  .widget-values-small {
+
+    float: left;
+
+    @include media_max_width(1350px) {
+      float: none;
+      display: inline-block;
+      margin-right: 5px;
+    } // @include media_max_width(1350px)
+
+  } // .widget-values-small
+
+  .widget-value-small {
+
+    @include media_max_width(1350px) {
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: $offset / 2;
+    } // @include media_max_width(1350px)
+
+    .title {
+      @extend .text-muted;
+      margin-bottom: -5px;
+      text-transform: uppercase;
+      font-size: $font-size-small;
+    } // .title
+
+    span {
+
+      display: block;
+      font-size: 1.4em;
+      line-height: $line-height-base;
+
+      @include media_max_width(1350px) {
+        display: inline-block;
+      } // @include media_max_width(1350px)
+
+    } // span
+
+  } // .widget-value-small
+
+  .widget-heading {
+
+    padding-bottom: 0;
+
+    .canvas-holder {
+
+      width: auto;
+
+      margin: 0 -15px 0;
+      padding-top: 20px;
+
+    } // .canvas-holder
+
+  } // .widget-heading
+
+} // .widget-summary-statistics

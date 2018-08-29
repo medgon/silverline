@@ -1,0 +1,129 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Modifications
+// =============
+
+$percents-darken : 6.5%;
+$percents-lighten: 6.5%;
+
+
+//
+// Typography
+// ==========
+
+$font-size       : 13px;
+$font-size-small : 85%;
+$font-size-big   : 20px;
+$line-height     : 1.6em;
+$line-height-base: 1.428571429 !default; // Default bootstrap (20/14)
+
+$font-family-primary       : 'Roboto', sans-serif;
+$font-weight-primary       : 400;
+$font-weight-primary-bold  : 600;
+
+$font-size-h1: 28px;
+$font-size-h2: 24px;
+$font-size-h3: 22px;
+$font-size-h4: 20px;
+$font-size-h5: 14px;
+$font-size-h6: 12px;
+
+
+
+//
+// Icon Font Sizes
+// ===============
+
+$font-size-icon:      14px;
+$font-size-icon-1p5x: 1.5em;
+$font-size-icon-2x:   2em;
+$font-size-icon-3x:   3em;
+$font-size-icon-4x:   4em;
+$font-size-icon-5x:   5em;
+
+
+
+//
+// Additional
+// ==========
+
+$offset: 30px;
+$border-radius: 2px;
+
+$muted-opacity: .65;
+$placeholder-opacity: .7;
+
+$padding-lg-v: 18px;
+$padding-md-v: 14px;
+$padding-sm-v: 10px;
+$padding-xs-v: 6px;
+
+$padding-lg-h: 38px;
+$padding-md-h: 34px;
+$padding-sm-h: 30px;
+$padding-xs-h: 26px;
+
+
+
+$navbar-height   : 60px;
+$navbar-padding-v: 20px;
+
+
+
+$el-border-left-width: 4px;
+
+
+
+//
+// Default Styles
+// ==============
+
+$default-timing-function: cubic-bezier(.09, .48, .46, .93);
+$default-transition-duration: .375s;
+$default-transition: all $default-transition-duration $default-timing-function;
+
+
+
+//
+// Media queries breakpoints
+// =========================
+
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$screen-xs-max: $screen-sm-min - 1;
+$screen-sm-max: $screen-md-min - 1;
+$screen-md-max: $screen-lg-min - 1;
+
+
+
+// ------------------------------------------------------------------------------------------------------------------- /
+//
+// Front pages
+//
+// ------------------------------------------------------------------------------------------------------------------- /
+
+$front-side-panel-width: 90px;
+$front-sidebar-width   : 300px;
+
+// ------------------------------------------------------------------------------------------------------------------- /
+//
+// Dashboard
+//
+// ------------------------------------------------------------------------------------------------------------------- /
+
+$dashboard-sidebar-width-collapsed: 90px;
+$dashboard-sidebar-width-expanded : 250px;
+
+

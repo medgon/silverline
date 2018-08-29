@@ -1,0 +1,133 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Navigation
+// ==========
+
+.gallery-navigation {
+
+  list-style: none;
+  margin: 0 0 $offset;
+  padding: 0;
+
+  li {
+
+    display: block;
+
+    a {
+
+      display: block;
+      margin: 0 0 $offset;
+
+      color: $color-text;
+
+      span {
+
+        @extend .h4;
+
+        display: block;
+        margin-bottom: 5px;
+        color: $color-text-heading;
+
+      } // span
+
+      &:hover, &:focus {
+
+        color: $color-text;
+
+        span {
+          color: $color-link;
+        } // span
+
+      } // &:hover, &:focus
+
+    } // a
+
+  } // li
+
+} // .gallery-navigation
+
+
+
+//
+// Gallery Item
+// ============
+
+.gallery-item {
+  background: transparent none no-repeat scroll center center / cover;
+} // .gallery-item
+
+
+
+//
+// Carousel
+// ========
+
+.gallery-carousel {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 100vh;
+  width: 66%;
+
+  overflow: hidden;
+
+  .owl-carousel-slide {
+    height: 100vh;
+  } // .owl-carousel-slide
+
+} // .gallery-carousel
+
+.sticky-active {
+  .gallery-carousel {
+    position: fixed;
+    //right: 90px;
+    //width: calc(66% - 59px);
+    right: 0;
+    width: calc(66%);
+  } // .gallery-carousel
+} // .block-active
+
+.sticky-bellow {
+  .gallery-carousel {
+  } // .gallery-carousel
+} // .block-in-bottom
+
+.sticky-above {
+  .gallery-carousel {
+    top: auto;
+    bottom: 0;
+  } // .gallery-carousel
+} // .block-in-top
+
+
+//
+// Responsive
+// ==========
+
+@include media_sm() {
+
+  .gallery-carousel {
+
+    position: static;
+    width: 100%;
+    height: auto;
+
+    .owl-carousel-slide {
+      height: 400px;
+      max-height: 100vh;
+    } // .owl-carousel-slide
+
+  } // .gallery-carousel
+
+} // @include media_sm()

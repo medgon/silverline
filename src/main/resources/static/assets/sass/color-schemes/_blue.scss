@@ -1,0 +1,63 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+//
+// Modifications
+// =============
+
+$percents-darken : 6.5%;
+$percents-lighten: 6.5%;
+
+//
+// Color Palette
+// =============
+
+$color-primary:         md-color($md-lst-color-blue,    600);
+$color-primary-light:   md-color($md-lst-color-blue,    400);
+$color-primary-dark:    md-color($md-lst-color-blue,    700);
+
+$color-secondary:       md-color($md-lst-color-pink,      A200);
+$color-secondary-light: md-color($md-lst-color-pink,      A100);
+$color-secondary-dark:  md-color($md-lst-color-pink,      A400);
+
+$color-dark:            md-color($md-lst-color-blue-grey, 700);
+$color-light:           md-color($md-lst-color-blue-grey, 50);
+
+$color-sidebar:         $color-primary;
+$color-top-menu:        $color-primary-dark;
+//$color-page-header:     $color-light;
+$color-page-header:     $color-top-menu;
+$color-footer:          $color-dark;
+
+
+
+//
+// Colors
+// ======
+
+// Bootstrap colors
+$color-default     : $color-secondary;
+$color-success     : #28a758;
+$color-info        : #209eab;
+$color-warning     : #da993f;
+$color-danger      : #d5535e;
+
+// Text colors
+$color-text              : #444;
+$color-text-heading      : #222;
+$color-text-light        : rgba(255, 255, 255, .87);
+$color-text-light-heading: #fff;
+
+// Links
+$color-link        : $color-primary;
+$color-link-hover  : md-darken($color-primary);
+
+// Elements color values
+$color-bg          : #fbfbfb;
+$color-border      : #e0e0e0;
+$color-border-input: #777;

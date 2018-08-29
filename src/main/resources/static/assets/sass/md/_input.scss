@@ -1,0 +1,196 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.md-input {
+
+  position: relative;
+
+  &::after {
+
+    display: block;
+    content: '';
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: auto;
+
+    width: 0;
+    height: 2px;
+
+    background: $color-primary;
+
+    @include transition($default-transition);
+
+  } // &::after
+
+  &.md-input-with-icon {
+
+    padding-left: 40px;
+
+    .icon {
+      display: block;
+    } // .icon
+
+    .md-input-placeholder {
+      left: 40px;
+    } // .md-input-placeholder
+
+    &::after {
+      left: 40px;
+    } // &::after
+
+    &.focus {
+
+      &::after {
+        width: calc(100% - 40px);
+      } // &::after
+
+    } // &.focus
+
+  } // &.md-input-with-icon
+
+  .icon {
+
+    @extend .text-muted;
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    display: none;
+
+    font-size: 25px;
+
+    @include transition($default-transition);
+
+  } // .icon
+
+  .md-input-control {
+
+    position: relative;
+    z-index: 1;
+
+    padding: 25px 0 12px;
+    width: 100%;
+
+    font-size: inherit;
+    font-weight: inherit;
+
+    border: solid 0 $color-border;
+    border-bottom-width: 1px;
+
+    background: transparent;
+
+    @include transition($default-transition);
+
+    &:hover, &.hover {
+    } // &:focus, &.focus
+
+    &:focus, &.focus {
+    } // &:focus, &.focus
+
+    &[disabled], &[readonly] {
+      opacity: .7;
+      background-color: $color-light;
+    } // &[disabled], &[readonly]
+
+  } // .md-input-control
+
+  .md-input-placeholder {
+
+    display: block;
+
+    position: absolute;
+    top: 24px;
+    left: 0;
+    z-index: 0;
+
+    opacity: .65;
+
+    @include transition($default-transition);
+
+  } // .md-input-placeholder
+
+  &.focus, &.completed {
+
+    .md-input-placeholder {
+      top: 0;
+      font-size: 11px;
+    } // .md-input-placeholder
+
+  } // &.focus, &.completed
+
+  &:hover {
+
+    .md-input-control {
+      border-color: $color-dark;
+    } // .md-input-control
+
+  } // &:hover
+
+  &.focus {
+
+    &::after {
+      width: 100%;
+    } // &::after
+
+    .md-input-placeholder {
+      color: $color-primary;
+    } // .md-input-control
+
+    .icon {
+      color: $color-primary;
+    } // .icon
+
+  } // &.focus
+
+} // .md-input
+
+
+//
+// Inverse color style
+// ===================
+
+.md-input-inverse {
+
+  &:hover {
+
+    .md-input-control {
+      border-color: #fff;
+    } // .md-input-control
+
+  } // &:hover
+
+  &.focus {
+
+    &::after {
+      width: 100%;
+      background: #fff;
+    } // &::after
+
+    .md-input-placeholder {
+      color: #fff;
+    } // .md-input-control
+
+    .icon {
+      color: #fff;
+    } // .icon
+
+    .md-input-control {
+      border-color: #fff;
+    } // .md-input-control
+
+  } // &.focus
+
+
+} // .md-input-inverse

@@ -1,0 +1,86 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.widget-tasks {
+
+
+  .widget-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  } // .widget-body
+
+} // .widget-tasks
+
+.widget-tasks-list {
+
+  margin: 0 -15px;
+
+  border: none !important;
+  @include border-radius(0);
+  @include box-shadow(none !important);
+
+  .list-group-item {
+    border: none;
+  } // .list-group-item
+
+  .label {
+    @include box-shadow(none);
+  } // .label
+
+} // .widget-tasks-list
+
+.widget-tasks .widget-footer {
+
+  background: #fff;
+  border: none;
+
+  ul {
+
+    text-align: right;
+    @extend .custom-list-inline;
+
+    > li {
+
+      margin-left: 20px;
+
+      a {
+
+        color: $color-text;
+
+        .icon {
+          font-size: $font-size-icon-1p5x;
+        } // .icon
+
+        &:hover, &:focus {
+          color: $color-primary;
+        } // &:hover, &:focus
+
+      } // a
+    } // > li
+  } // ul
+
+} // .widget-tasks .widget-footer
+
+.widget-tasks {
+
+  .widget-footer .widget-footer-content {
+    opacity: .0;
+    @include transform(translateY(10px) scale(.8));
+    @include transition($default-transition);
+  } // .widget-footer .widget-footer-content
+
+  &:hover, &:focus {
+    .widget-footer .widget-footer-content {
+      opacity: 1.0;
+      @include transform(none);
+    } // .widget-footer .widget-footer-content
+  } // &:hover, &:focus
+
+} // .widget-tasks

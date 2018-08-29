@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silverline</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Load jq first -->
+	<script src="vendor/jquery-3.2.1/jquery.min.js"></script>
+
+	<!-- Load bootstrap only after jq -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Load angular before KendoUI-->
+	<script src="vendor/angular/angular.min.js"></script>
+	<script src="vendor/angular/angular-filter.min.js"></script>
+	
+	<!-- Load angular router-->
+  	<script src="vendor/ui-router/angular-ui-router.js"></script>
+	<script src="vendor/ui-router/routeToComponents.js"></script>
+	
+	<!-- Load KendoUI only after jq and AngularJS-->
+	<script src="vendor/kendo/kendo.all.min.js"></script>
+	<script src="vendor/kendo/jszip.min.js"></script>
+    <script src="vendor/kendo/kendo.angular.min.js"></script>
+	
+	<!-- Load angular app -->
+	<script src="app/app.js"></script>
+	
+	<!-- Load angular route config-->
+	<script src="app/routeConfig.js"></script>
+	
+	
+	<!-- App components  -->
+	<script src="app/components/header/header.js"></script>
+	<script src="app/components/reportView/reportView.js"></script>
+	<script src="app/components/itemInfo/itemInfo.js"></script>
+
+</head>
+
+<body ng-app="app">
+	<header></header>
+    <report-view></report-view>
+    
+</body>
+
+</html>

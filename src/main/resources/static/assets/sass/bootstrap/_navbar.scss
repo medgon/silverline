@@ -1,0 +1,340 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ===========
+
+.navbar {
+
+  margin-bottom: 0;
+  min-height: $navbar-height;
+
+  border: none;
+  background: transparent none;
+
+  @include border-radius(0);
+
+} // .navbar
+
+.navbar-nav {
+
+  > li > a {
+    padding-top: $navbar-padding-v;
+    padding-bottom: $navbar-padding-v;
+    text-shadow: none;
+  } // > li > a
+
+  .open {
+
+    .dropdown-menu > li > a {
+
+      @include media_sm() {
+        padding: $padding-md-v 20px;
+      } // @include media_sm()
+
+    }
+
+  } // .open
+
+} // .navbar-nav
+
+
+
+//
+// Navbar form
+// ===========
+
+.navbar-toggle {
+
+  margin-top: 14px;
+
+  @include border-radius($border-radius);
+  @include transition($default-transition);
+
+  .icon-bar {
+    @include border-radius(0);
+  } // .icon-bar
+
+} // .navbar-toggle
+
+
+
+//
+// Navbar brand
+// ============
+
+.navbar-brand {
+
+  //padding: 20px 15px 20px /*0*/;
+  padding: 20px 15px 20px 0;
+  height: $navbar-height;
+  text-shadow: none;
+
+} // .navbar-brand
+
+
+
+//
+// Toggleable Navbar Form
+// ======================
+
+.navbar-form-toggleable {
+
+  margin: 0;
+  padding: 5px 15px;
+  height: $navbar-height;
+
+  overflow: hidden;
+
+  .form-control {
+    max-width: 100%;
+  } // .form-control
+
+  .navbar-form-toggle-content {
+
+    display: inline-block;
+    margin-right: 15px;
+
+    opacity: .0;
+
+    @include transform(translateX(100%));
+    @include transition($default-transition);
+
+  } // .navbar-form-toggle-content
+
+  &.in {
+
+    .navbar-form-toggle-content {
+      opacity: 1.0;
+      @include transform(none);
+    } // .navbar-form-toggle-content
+
+  } // &.in
+
+  .btn {
+    @include box-shadow(none);
+  } // .btn
+
+  @include media_sm() {
+
+    padding-left: 0;
+    padding-right: 0;
+
+    .navbar-form-toggle-content {
+      display: block;
+      opacity: 1.0 !important;
+      @include transform(none);
+    } // .navbar-form-toggle-content
+
+    .btn {
+      display: none;
+    } // .btn
+  } // @include media_sm()
+
+} // .dashboard-top-line .navbar-form-toggleable
+
+
+
+//
+// Navbar form styles
+// ==================
+
+.navbar-form {
+
+  .form-control {
+    padding: 0;
+  } // .form-control
+
+  .navbar-form-toggle {
+    width: 50px;
+    height: 50px;
+  } // .navbar-form-toggle
+
+} // .dashboard-top-line .navbar-form
+
+
+
+//
+// Menu button
+// ===========
+
+.navbar .menu-button {
+
+  width: 60px;
+  height: 60px;
+
+  float: left;
+
+  .menu-toggle {
+    width: 60px;
+    height: 60px;
+    border: none;
+  } // .menu-toggle
+
+} // .navbar .menu-button
+
+
+
+//
+// Profile dropdown menu
+// =====================
+
+.navbar .profile-avatar {
+
+  display: block;
+  float: left;
+
+  width: 40px;
+  height: 40px;
+
+  margin: -10px 10px -10px 0;
+
+  overflow: hidden;
+
+  line-height: 1;
+
+  @include border-radius(50%);
+
+  img {
+    max-width: 100%;
+  } // img
+
+} // .navbar  .profile-avatar
+
+
+
+//
+// Badges & notifications
+// ======================
+
+.navbar .has-badge {
+
+  position: relative;
+
+  .badge {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  } // .badge
+
+} // .navbar .has-badge
+
+.navbar .nav-notification {
+
+  padding-right: 25px;
+
+  .badge {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @include media_sm() {
+      top: 20px;
+    } // @include media_sm()
+
+  } // .badge
+
+} // .navbar .nav-notification
+
+
+
+//
+// Notifications widget
+// ====================
+
+.navbar-notifications-dropdown {
+
+  width: 370px;
+  padding: 0;
+
+  .title {
+    padding: 10px;
+    font-weight: $font-weight-primary-bold;
+  } // .title
+
+  .avatar {
+
+    width: 40px;
+    height: 40px;
+
+    @include border-radius(50%);
+
+  } // .avatar
+
+  li {
+  } // li
+
+  .notification {
+
+    position: relative;
+
+    display: block;
+    padding: 10px 10px 10px 60px !important;
+
+    width: 100%;
+    max-width: 100%;
+
+    .avatar {
+      position: absolute;
+      top: 15px;
+      left: 10px;
+    } // .avatar
+
+    .user-name {
+
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+      font-size: $font-size-small;
+      font-weight: $font-weight-primary-bold;
+
+    } // .message-user-name
+
+    .text {
+
+      margin-bottom: 5px;
+
+      white-space: normal;
+      font-size: $font-size-small;
+
+    } // .message-text
+
+    .date {
+
+      @extend .text-muted;
+
+      text-align: right;
+      font-size: $font-size - 3px;
+
+    } // .message-date
+
+  } // .notification
+
+} // .navbar-notifications-dropdown
+
+
+
+
+//
+// Alternate navbars
+// =================
+
+@include navbar-colored(navbar-theme,     $color-top-menu );
+@include navbar-colored(navbar-primary,   $color-primary  );
+@include navbar-colored(navbar-secondary, $color-secondary);
+@include navbar-colored(navbar-default,   $color-default  );
+@include navbar-colored(navbar-success,   $color-success  );
+@include navbar-colored(navbar-info,      $color-info     );
+@include navbar-colored(navbar-warning,   $color-warning  );
+@include navbar-colored(navbar-danger,    $color-danger   );
+@include navbar-colored(navbar-light,     $color-light    );
+@include navbar-colored(navbar-dark,      $color-dark     );

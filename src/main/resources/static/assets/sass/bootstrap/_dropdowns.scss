@@ -1,0 +1,85 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.dropdown-menu {
+
+  opacity: .0;
+  border: solid 1px $color-border;
+
+  @include animation(.3s animationMenu);
+  @include border-radius($border-radius);
+  @include transition-transform(transform .175s $default-timing-function);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+  li {
+
+    a {
+
+      color: $color-text;
+      padding: $padding-md-v 20px;
+
+      &:hover, &:focus {
+        background: $color-light;
+      } // &:hover, &:focus
+
+      .icon {
+        margin-right: 5px;
+      } // .icon
+
+    } // a
+
+  } // li
+
+} // .dropdown-menu
+
+.open {
+
+  > .dropdown-menu {
+    opacity: 1.0;
+  } // > .dropdown-menu
+
+} // .open
+
+
+//
+// Dropdown menu heading, footer
+// =============================
+
+.dropdown-menu-footer {
+
+  padding: 10px 15px;
+  border-top: none;
+
+  .btn-group {
+    @include box-shadow(none !important);
+  } // .btn-group
+
+  .btn {
+    @include box-shadow(none !important);
+  } // .btn
+
+} // .dropdown-menu-footer
+
+
+
+//
+// Animation keyframes
+// ===================
+
+@include keyframes(animationMenu) {
+  from {
+    opacity: .0;
+    @include transform(translateY(10px) scale(.95));
+  } // from
+  to {
+    opacity: 1.0;
+    @include transform(none);
+  } // to
+} // @include keyframes(animationMenu)

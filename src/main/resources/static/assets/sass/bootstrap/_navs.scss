@@ -1,0 +1,57 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Stacked Pills Navigation
+// ========================
+
+.nav-vertical {
+
+  li {
+
+    a {
+
+      display: block;
+      margin: 0;
+
+      @include border-radius($border-radius);
+
+      &:hover, &:focus {
+        color: $color-text;
+        background: $color-light;
+      } // &:hover, &:focus
+
+    } // a
+
+    &.active {
+
+      a {
+
+        background: $color-primary;
+
+        &:hover {
+          color: #fff;
+          border-color: md-brighten($color-primary);
+          background-color: md-brighten($color-primary);
+        } // &:hover
+
+        &:focus {
+          color: #fff;
+          border-color: md-darken($color-primary);
+          background-color: md-darken($color-primary);
+        } // &:focus
+
+      } // a
+
+    } // &.active
+
+  } // li
+
+} // .nav-vertical

@@ -1,0 +1,94 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ===========
+
+.section {
+
+  position: relative;
+  padding: $offset * 1.6 0;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  .section-header {
+
+    text-align: center;
+
+    .section-title {
+      @extend .h2;
+      margin-bottom: 5px;
+    } // .section-title
+
+    .section-subtitle {
+    } // .section-subtitle
+
+    &.section-header-left {
+      text-align: left;
+    } // &.section-header-left
+
+  } // .section-header
+
+  .section-content {
+    margin-top: $offset * 1.6;
+  } // .section-content
+
+  &.section-fullscreen {
+    min-height: 100vh;
+  } // &.section-fullscreen
+
+  &.section-front {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .section-content {
+      margin-top: 100px;
+    } // .section-content
+
+    @include media_sm() {
+
+      .section-header {
+        text-align: center;
+      } // .section-header
+
+      .section-header-left {
+        margin-bottom: 100px;
+      } // .section-header-left
+
+    } // @include media_sm()
+
+  } // &.section-front
+
+} // .section
+
+
+
+//
+// Section backgrounds
+// ===================
+
+.section-background {
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  width: 50%;
+  height: 70vh;
+
+  @include media-sm() {
+    opacity: .1;
+    width: 100%;
+  } // @include media-sm
+
+} // .section-background

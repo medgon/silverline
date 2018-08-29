@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700);
+.demo-elements {
+  position: relative;
+  padding: 100px 30px;
+  margin-bottom: 30px;
+  background-color: #f2f2f2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+  .demo-elements:after {
+    display: block;
+    content: 'EXAMPLE';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: .3em .5em;
+    opacity: 0.65;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .demo-elements:hover::after {
+    opacity: 1.0; }
+
+.demo-list-group {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto; }
+
+.demo-table {
+  margin-bottom: 0; }
+
+.demo-panel {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=demo.css.map */

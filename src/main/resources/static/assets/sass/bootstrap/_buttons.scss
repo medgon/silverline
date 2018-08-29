@@ -1,0 +1,143 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+//
+// General
+// =======
+
+.btn {
+
+  padding: $padding-md-v $padding-lg-h;
+
+  font-weight: 500;
+  text-shadow: none;
+  font-size: $font-size;
+  //font-size: $font-size - 1px;
+
+  background: transparent;
+  border: solid 0 transparent;
+
+  @include border-radius($border-radius);
+  @include transition($default-transition);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+  &:hover, &:focus, &:active {
+    text-shadow: none;
+    @include box-shadow(none);
+  } // &, &:hover, &:focus, &:active
+
+  &:disabled, &.disabled {
+    opacity: .65;
+  } // &:disabled, &.disabled
+
+  &.btn-lg {
+    padding: $padding-lg-v $padding-lg-h;
+    font-size: $font-size + 2;
+  } // &.btn-lg
+
+  &.btn-sm {
+    padding: $padding-sm-v $padding-sm-h;
+  } // &.btn-sm
+
+  &.btn-xs {
+    padding: $padding-xs-v $padding-xs-h;
+    font-size: $font-size-small;
+  } // &.btn-xs
+
+  &.btn-o {
+    color: $color-text;
+    background-color: transparent;
+    border: solid 1px $color-border;
+    @include box-shadow(0 3px 5px rgba(0, 0, 0, .05));
+  } // &.btn-o
+
+  &.btn-t {
+    color: $color-text;
+    border: solid 0 transparent;
+    background-color: transparent;
+    @include box-shadow(none !important);
+  } // &.btn-t
+
+  &.btn-tc {
+    color: $color-text;
+    border: solid 0 transparent;
+    background-color: transparent;
+    @include box-shadow(none !important);
+  } // &.btn-tc
+
+  &.btn-circle {
+
+    padding: $padding-md-v;
+    @include border-radius(50% !important);
+
+    .icon {
+      display: block;
+      width: 18px;
+      height: 18px;
+      font-size: 14px;
+      line-height: 18px;
+    } // .icon
+
+    &.btn-lg {
+      padding: $padding-lg-v;
+    } // &.btn-lg
+
+    &.btn-sm {
+      padding: $padding-sm-v;
+    } // &.btn-sm
+
+    &.btn-xs {
+      padding: $padding-xs-v;
+      font-size: $font-size -1px;
+    } // &.btn-xs
+
+  } // &.btn-circle
+
+  &.btn-square {
+    @include border-radius(0);
+  } // &.btn-square
+
+  &.btn-icon {
+    padding-left: 0;
+    padding-right: 0;
+  } // &.btn-icon
+
+} // .btn
+
+
+
+//
+// Icons in buttons
+// ================
+
+.btn .icon {
+  font-size: $font-size-icon;
+  &.icon-left  { margin-right: 5px; }
+  &.icon-right { margin-left:  5px; }
+} // .btn .icon
+
+
+
+//
+// Alternate colors
+// ================
+
+@include btn-colored(btn-primary,         $color-primary        );
+@include btn-colored(btn-secondary,       $color-secondary      );
+@include btn-colored(btn-primary-light,   $color-primary-light  );
+@include btn-colored(btn-secondary-light, $color-secondary-light);
+@include btn-colored(btn-primary-dark,    $color-primary-dark   );
+@include btn-colored(btn-secondary-dark,  $color-secondary-dark );
+@include btn-colored(btn-default,         $color-default        );
+@include btn-colored(btn-success,         $color-success        );
+@include btn-colored(btn-info,            $color-info           );
+@include btn-colored(btn-warning,         $color-warning        );
+@include btn-colored(btn-danger,          $color-danger         );
+@include btn-colored(btn-light,           $color-light          );
+@include btn-colored(btn-dark,            $color-dark           );

@@ -1,0 +1,108 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+//
+// Imports
+// =======
+
+@import 'md/color-palette';
+@import 'color-schemes/indigo';
+
+@import 'includes/imports';
+@import 'includes/variables';
+@import 'includes/xbrowser';
+@import 'includes/media';
+
+
+
+// ------------------------------------------------------------------------------------------------------------------- /
+// Elements
+// ------------------------------------------------------------------------------------------------------------------- /
+
+.demo-elements {
+
+  position: relative;
+
+  padding: 100px 30px;
+  margin-bottom: $offset;
+  //border: solid 1px $color-border;
+
+  //background: $color-light;
+  background-color: darken($color-bg, 3.5%);
+
+  @include border-radius(2px);
+  //@include box-shadow(0 3px 5px rgba(0, 0, 0, .05));
+
+  &:after {
+
+    display: block;
+    content: 'EXAMPLE';
+
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    padding: .3em .5em;
+
+    opacity: $muted-opacity;
+
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: .5px;
+    font-weight: $font-weight-primary;
+
+    background: rgba(0, 0, 0, .7);
+
+    @include border-radius($border-radius);
+
+  } // &:after
+
+  &:hover::after {
+    opacity: 1.0;
+  } // &:hover::after
+
+} // .demo-elements
+
+
+
+//
+// List group
+// ==========
+
+.demo-list-group {
+
+  width: 500px;
+  max-width: 100%;
+
+  margin: 0 auto;
+
+} // .demo-list-group
+
+
+//
+// Table
+// =====
+
+.demo-table {
+  margin-bottom: 0;
+} // .demo-table
+
+
+
+//
+// Panel
+// =====
+
+.demo-panel {
+
+  width: 500px;
+  max-width: 100%;
+
+  margin: 0 auto;
+
+} // ..demo-panel

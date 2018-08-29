@@ -1,0 +1,136 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ===========
+
+.md-checkbox {
+
+  display: block;
+  position: relative;
+
+  & + .md-checkbox {
+    margin-top: $offset / -4px;
+  } // & + .md-checkbox
+
+  &.md-checkbox-inline {
+
+    position: relative;
+    display: inline-block;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    cursor: pointer;
+    font-weight: $font-weight-primary;
+
+    & + .md-checkbox-inline,
+    & + .md-radio-inline {
+      margin-left: 10px;
+    } // & + .md-checkbox-inline
+
+  } // &.md-checkbox-inline
+
+  input[type="checkbox"] {
+
+    position: absolute;
+    opacity: 0;
+
+    & + label {
+
+      margin-bottom: 0;
+      padding-top: 2px;
+      padding-left: 26px;
+
+      cursor: pointer;
+      font-weight: $font-weight-primary;
+
+      &::before {
+
+        position: absolute;
+        top: 3px;
+        left: 0;
+
+        display: inline-block;
+        content: '';
+
+        width: 18px;
+        height: 18px;
+
+        margin-right: 5px;
+
+        background-color: transparent;
+        border: solid 2px $color-border-input;
+
+        @include transition($default-transition);
+        @include border-radius($border-radius);
+
+      } // &::before
+
+      &::after {
+
+        display: block;
+        content: '';
+
+        width: 12px;
+        height: 7px;
+
+        position: absolute;
+        top: 7px;
+        left: 3px;
+
+        opacity: .0;
+
+        background: transparent;
+
+        border: 2px solid $color-border-input;
+        border-top: none;
+        border-right: none;
+
+        @include transform(rotate(-45deg));
+
+      } // &::after
+
+      &:hover {
+        &::before { }
+        &::after  { }
+      } // &:hover
+
+    } // & + label
+
+    &:checked {
+      & + label {
+
+        &::before { }
+        &::after  { opacity: 1.0; }
+
+      } // & + label
+    } // &:checked
+
+  } // input[type="checkbox"]
+
+} // .md-checkbox
+
+
+
+//
+// Alternate colors
+// ================
+
+@include md-checkbox-colored(md-checkbox-primary,   $color-primary  );
+@include md-checkbox-colored(md-checkbox-secondary, $color-secondary);
+@include md-checkbox-colored(md-checkbox-default,   $color-default  );
+@include md-checkbox-colored(md-checkbox-success,   $color-success  );
+@include md-checkbox-colored(md-checkbox-info,      $color-info     );
+@include md-checkbox-colored(md-checkbox-warning,   $color-warning  );
+@include md-checkbox-colored(md-checkbox-danger,    $color-danger   );
+@include md-checkbox-colored(md-checkbox-light,     $color-light    );
+@include md-checkbox-colored(md-checkbox-dark,      $color-dark     );

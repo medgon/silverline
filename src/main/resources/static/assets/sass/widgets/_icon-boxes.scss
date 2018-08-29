@@ -1,0 +1,97 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Default icon box
+// ================
+
+.icon-box {
+
+  position: relative;
+  margin-bottom: $offset;
+
+  text-align: center;
+
+  .icon {
+
+    position: relative;
+    margin-bottom: $offset;
+
+    font-size: 3em;
+    text-align: center;
+    color: $color-text;
+
+  } // .icon
+
+  .title {
+    @extend .h4;
+    margin-bottom: $offset;
+    color: $color-text-heading;
+  } // .title
+
+  .text {
+    margin-bottom: $offset / 2;
+  } // .text
+
+} // .icon-box
+
+
+
+//
+// Alternative icon box
+// ====================
+
+.icon-box-alt {
+
+  text-align: center;
+
+  .icon {
+
+    margin-bottom: $offset;
+
+    width: 96px;
+    height: 96px;
+
+    color: #fff;
+    font-size: 2em;
+    line-height: 96px;
+    text-align: center;
+
+    border: solid 1px #fff;
+
+    @include border-radius(50%);
+    @include transition(all .3s ease-in-out);
+
+  } // .icon
+
+  .title {
+    @extend .h4;
+    margin-bottom: $offset;
+  } // .title
+
+  .text {
+    color: rgba(255, 255, 255, .8);
+  } // .text
+
+  &:hover {
+
+    .icon {
+      color: $color-text;
+      background: #fff;
+      @include box-shadow(0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15));
+    } // .icon
+
+  } // &:hover
+
+  @include media_sm() {
+    margin-bottom: $offset;
+  } // @include media_sm()
+
+} // .icon-box-alt

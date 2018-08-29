@@ -1,0 +1,90 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+
+//
+// Button Groups
+// =============
+
+.btn-group {
+
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+  .btn-group {
+    @include box-shadow(none);
+  } // .btn-group
+
+  .btn {
+
+    @include box-shadow(none);
+    @include border-radius($border-radius);
+
+  } // .btn
+
+  &.btn-group-nowrap {
+    display: flex;
+  } // &.btn-group-nowrap
+
+  &.btn-group-lg {
+    > .btn, .btn-lg {
+      padding: $padding-lg-v $padding-lg-h;
+      font-size: $font-size + 2;
+    } //  > .btn, .btn-lg
+  } // &.btn-group-lg
+
+  &.btn-group-sm {
+    > .btn, .btn-sm {
+      padding: $padding-sm-v $padding-sm-h;
+    } //  > .btn, .btn-sm
+  } // &.btn-group-sm
+
+  &.btn-group-xs {
+    > .btn, .btn-xs {
+      padding: $padding-xs-v $padding-xs-h;
+      font-size: $font-size-small;
+    } //  > .btn, .btn-xs
+  } // &.btn-group-xs
+
+  &.open {
+
+    .dropdown-toggle {
+
+      // TODO
+      // .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary
+
+    } // .dropdown-toggle
+
+  } // .open
+
+} // .btn-group
+
+.btn-group-vertical {
+
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+  .btn-group {
+    @include box-shadow(none);
+  } // .btn-group-vertical
+
+  .btn {
+    @include box-shadow(none);
+  } // .btn
+
+  > .btn {
+    &:first-child:not(:last-child) {
+      @include border-radius(0);
+    } // &:first-child
+
+    &:last-child:not(:first-child) {
+      @include border-radius(0);
+    } // &:last-child
+  }
+
+} // .btn-group-vertical

@@ -1,0 +1,129 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Main styles
+// ===========
+
+.alert {
+
+  color: #fff;
+  text-shadow: none;
+
+  //padding: 15px 0;
+  margin-bottom: $offset;
+  padding: 0;
+  border: none;
+
+  @include border-radius(0);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+  .alert-title {
+    margin: 0;
+    padding: 15px;
+    color: #fff;
+  } // .alert-title
+
+  .alert-body {
+
+    //padding: 0 15px;
+    padding: 15px;
+
+    p:last-child {
+      margin-bottom: 0;
+    } // p:last-child
+
+    & + .alert-footer {
+      //margin-top: $offset / 2;
+    } // & + .alert-footer
+
+  } // .alert-body
+
+  .alert-footer {
+
+    //padding: 10px 15px;
+    padding: 15px;
+    margin-bottom: -15px;
+
+    text-align: right;
+
+    .btn {
+      //@include border-radius(0 !important);
+      @include box-shadow(none !important);
+    } // .btn
+
+  } // .alert-footer
+
+  &.alert-dismissable,
+  &.alert-dismissible {
+
+    .close {
+      top: 15px;
+      right: 15px;
+      color: #fff;
+    } // .close
+
+  } // &.alert-dismissable, &.alert-dismissible
+
+  a, .alert-link {
+    font-weight: $font-weight-primary;
+    &:hover, &:focus {}
+  } // a, .alert-link
+
+} // .alert
+
+//
+// Alternative variant
+// ===================
+
+.alert-alt {
+
+  background: #fff;
+  border-left: solid $el-border-left-width transparent;
+
+  @include border-radius($border-radius);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+
+  a, .alert-link {
+
+    color: $color-link;
+
+    &:hover, &:focus {
+      color: $color-link-hover;
+    } // &:hover, &:focus
+
+  } // a, .alert-link
+
+  &.alert-dismissable,
+  &.alert-dismissible {
+
+    .close {
+      color: $color-text;
+    } // .close
+
+  } // &.alert-dismissable, &.alert-dismissible
+
+} // .alert-alt
+
+
+
+//
+// Alternate colors
+// ================
+
+@include alert-colored(alert-primary,   $color-primary  );
+@include alert-colored(alert-secondary, $color-secondary);
+@include alert-colored(alert-default,   $color-default  );
+@include alert-colored(alert-success,   $color-success  );
+@include alert-colored(alert-info,      $color-info     );
+@include alert-colored(alert-warning,   $color-warning  );
+@include alert-colored(alert-danger,    $color-danger   );
+@include alert-colored(alert-light,     $color-light    );
+@include alert-colored(alert-dark,      $color-dark     );

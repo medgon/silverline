@@ -1,0 +1,28 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+@mixin badge-colored($class, $color) {
+
+  $_color-text: md-foreground-color($color, $color-text, #fff);
+
+  .#{$class} {
+
+    color: $_color-text;
+    background-color: $color;
+
+    &[href] {
+      &:hover, &:focus {
+        background-color: md-brighten($color);
+      } // &:hover, &:focus
+    } // &[href]
+
+  } // .#{$class}
+
+} // @mixin badge-colored($class, $color)

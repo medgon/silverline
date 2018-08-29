@@ -1,0 +1,123 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.menu-toggle {
+
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  padding: 21px 17px 12px;
+
+  .menu-icon {
+
+    position: relative;
+
+    width: 25px;
+    height: 19px;
+
+    color: inherit; // todo 1
+    cursor: pointer;
+
+    @include transform(rotate(0deg));
+    @include transition(.2s ease-in-out);
+
+    span {
+
+      display: block;
+      position: absolute;
+
+      width: 50%;
+      height: 3px;
+
+      opacity: 1;
+      //background: $color-primary; // todo 2
+      background-color: currentColor;
+
+      @include transform(rotate(0deg));
+      @include transition(.2s ease-in-out);
+
+      &:nth-child(even) {
+        left: 50%;
+      } // &:nth-child(even)
+
+      &:nth-child(odd) {
+        left: 0;
+      } // &:nth-child(odd)
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: 0;
+      } // &:nth-child(1), &:nth-child(2)
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 8px;
+      } // &:nth-child(3), &:nth-child(4)
+
+      &:nth-child(5),
+      &:nth-child(6) {
+        top: 16px;
+      } // &:nth-child(5), &:nth-child(6)
+
+    } // span
+
+  } // .menu-icon
+
+  &.open .menu-icon {
+
+    span {
+
+      &:nth-child(1),
+      &:nth-child(6) {
+        @include transform(rotate(45deg));
+      } // &:nth-child(5), &:nth-child(6)
+
+      &:nth-child(2),
+      &:nth-child(5) {
+        @include transform(rotate(-45deg));
+      } // &:nth-child(2), &:nth-child(5)
+
+      &:nth-child(1) {
+        top: 3px;
+        left: 3px;
+      } // &:nth-child(1)
+
+      &:nth-child(2) {
+        top: 3px;
+        left: calc(50% - 3px);
+      } // &:nth-child(2)
+
+      &:nth-child(3) {
+        left: -50%;
+        opacity: 0;
+      } // &:nth-child(3)
+
+      &:nth-child(4) {
+        left: 100%;
+        opacity: 0;
+      } // &:nth-child(4)
+
+      &:nth-child(5) {
+        top: 10px;
+        left: 3px;
+      } // &:nth-child(5)
+
+      &:nth-child(6) {
+        top: 10px;
+        left: calc(50% - 3px);
+      } // &:nth-child(6)
+
+    } // span
+
+  } // &.open .menu-icon
+
+} // .menu-toggle

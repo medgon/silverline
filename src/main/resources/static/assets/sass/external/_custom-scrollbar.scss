@@ -1,0 +1,55 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+// Scrollbar width
+$custom-scrollbar-width: 8px;
+
+
+//
+// Main styles
+// ===========
+
+.mCustomScrollbar {
+
+  .mCSB_container   { margin-right: 0; }
+  .mCustomScrollBox { }
+
+  .mCSB_scrollTools {
+
+    width: 0;
+    z-index: 9;
+
+    @include transition(width .15s linear .5s);
+
+    .mCSB_dragger .mCSB_dragger_bar {
+
+      width: $custom-scrollbar-width;
+      background: rgba(255, 255, 255, .5);
+
+      @include border-radius(0);
+
+    } // .mCSB_dragger .mCSB_dragger_bar
+
+    .mCSB_draggerRail {
+      width: $custom-scrollbar-width;
+      @include border-radius(0);
+    } // .mCSB_draggerRail
+
+  } // .mCSB_scrollTools
+
+  .mCSB_scrollTools_onDrag,
+  &:hover .mCSB_scrollTools {
+    width: $custom-scrollbar-width;
+    @include transition($default-transition);
+  } // &:hover .mCSB_scrollTools
+
+  .mCSB_scrollTools_onDrag  { opacity: .8; }
+  &:hover .mCSB_scrollTools { opacity: .5; }
+
+} // .mCustomScrollbar

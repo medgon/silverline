@@ -1,0 +1,38 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// General
+// =======
+
+.label {
+  padding: .3em .5em;
+  font-size: $font-size;
+  font-weight: $font-weight-primary;
+  background-color: $color-primary;
+  @include border-radius($border-radius);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+} // .label
+
+
+
+//
+// Alternate colors
+// ================
+
+@include label-colored(label-primary,   $color-primary  );
+@include label-colored(label-secondary, $color-secondary);
+@include label-colored(label-default,   $color-default  );
+@include label-colored(label-success,   $color-success  );
+@include label-colored(label-info,      $color-info     );
+@include label-colored(label-warning,   $color-warning  );
+@include label-colored(label-danger,    $color-danger   );
+@include label-colored(label-light,     $color-light    );
+@include label-colored(label-dark,      $color-dark     );

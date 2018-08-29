@@ -1,0 +1,73 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+.modal {
+
+  &.fade .modal-dialog {
+    @include transition($default-transition);
+    @include transform(translateY(100px) scale(.8));
+  } // &.fade .modal-dialog
+
+  &.in .modal-dialog {
+    @include transform(none);
+  } // &.in .modal-dialog
+
+} // .modal
+
+.modal-content {
+  border: none;
+  @include border-radius(1px);
+} // .modal-content
+
+.modal-header {
+  padding-top: 30px;
+  border-bottom: none;
+} // .modal-header
+
+.modal-body {
+  padding-bottom: 30px;
+} // .modal-body
+
+.modal-footer {
+
+  padding: 10px 15px;
+  border-top: none;
+
+  .btn-group {
+    @include box-shadow(none !important);
+  } // .btn-group
+
+  .btn {
+    @include box-shadow(none !important);
+  } // .btn
+
+} // .modal-footer
+
+
+
+//
+// Custom animation for modal
+// ==========================
+
+.modal-backdrop {
+
+  opacity: .0;
+  background: rgba(0, 0, 0, .5);
+  @include transition(all .15s linear);
+
+  &.fade {
+
+    &.in {
+      opacity: 1.0;
+    } // &.in
+
+  } // &.fade
+
+} // .modal-backdrop

@@ -1,0 +1,112 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+//
+// Main wrapper
+// ============
+
+.list-group {
+  @include border-radius($border-radius);
+  @include box-shadow(0 3px 8px 0 rgba(0, 0, 0, .12), 0 3px 12px 0 rgba(0, 0, 0, .09));
+} // .list-group
+
+
+
+//
+// Item
+// ====
+
+.list-group-item {
+
+  border-color: darken($color-border, $percents-darken);
+
+  &:first-child {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  } // &:first-child
+
+  &:last-child {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  } // &:last-child
+
+  &.active {
+    text-shadow: none;
+    background-image: none;
+  } // &.active
+
+} // .list-group-item
+
+
+
+//
+// Button & link
+// =============
+
+a.list-group-item,
+button.list-group-item {
+
+  &:hover, &:focus {
+    background: $color-light;
+    border-color: darken($color-border, $percents-darken);
+  } // &:hover, &:focus
+
+  &.active {
+
+    border-color: $color-primary;
+    background-color: $color-primary;
+
+    &:hover, &:focus {
+      background: md-darken($color-primary);
+      border-color: md-darken($color-primary);
+    } // &:hover, &:focus
+
+  } // &.active
+
+} // a.list-group-item, button.list-group-item
+
+
+
+//
+// Custom content options
+// ======================
+
+.list-group-item-text {
+  line-height: $line-height;
+} // .list-group-item-text
+
+
+
+//
+// Cover to panel body
+// ===================
+
+.list-group.panel-block-cover {
+
+  @include border-radius(0);
+
+  .list-group-item {
+    border: none;
+  } // .list-group-item
+
+} // .list-group.panel-block-cover
+
+//
+// Alternate colors
+// ================
+
+@include list-group-item-colored(list-group-item-primary,   $color-primary  );
+@include list-group-item-colored(list-group-item-secondary, $color-secondary);
+@include list-group-item-colored(list-group-item-default,   $color-default  );
+@include list-group-item-colored(list-group-item-success,   $color-success  );
+@include list-group-item-colored(list-group-item-info,      $color-info     );
+@include list-group-item-colored(list-group-item-warning,   $color-warning  );
+@include list-group-item-colored(list-group-item-danger,    $color-danger   );
+@include list-group-item-colored(list-group-item-light,     $color-light    );
+@include list-group-item-colored(list-group-item-dark,      $color-dark     );

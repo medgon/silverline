@@ -1,0 +1,145 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+//
+// Headings
+// ========
+
+.h1, h1, .h2, h2, .h3, h3,
+.h4, h4, .h5, h5, .h6, h6 {
+
+  display: block;
+  margin: 0 0 $offset;
+
+  //color: $color-primary;
+  line-height: $line-height;
+  font-family: $font-weight-primary;
+  font-weight: $font-weight-primary;
+
+} // .h{N}, h{N}
+
+.h1, h1 { font-size: $font-size-h1; }
+.h2, h2 { font-size: $font-size-h2; }
+.h3, h3 { font-size: $font-size-h3; }
+.h4, h4 { font-size: $font-size-h4; }
+.h5, h5 { font-size: $font-size-h5; }
+.h6, h6 { font-size: $font-size-h6; }
+
+
+
+//
+// Links
+// =====
+
+a {
+
+  color: $color-link;
+  @include transition($default-transition);
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $color-link-hover;
+  } // &:hover, &:focus
+
+} // a
+
+.btn-link {
+  &:hover {} // &:hover
+  &:focus {} // &:focus
+} // .btn-link
+
+.link-underline {
+
+  display: inline-block;
+  position: relative;
+
+  &::before, &::after {
+
+    display: block;
+    content: '';
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 1px;
+
+    @include transition($default-transition);
+
+  } // &::before, &::after
+
+  &::before {
+    width: 100%;
+    border-top: dotted 1px currentColor;
+  } // &::before
+
+  &::after {
+    width: 0;
+    opacity: .0;
+    border-top: solid 1px currentColor;
+  } // &::after
+
+  &:hover, &:focus {
+
+    &::before {
+      opacity: .0;
+    } // &::before
+
+    &::after {
+      width: 100%;
+      opacity: 1.0;
+    } // &::after
+
+  } // &:hover, &:focus
+
+} // .link-underline
+
+
+
+//
+// Others
+// ======
+
+p {
+  margin-bottom: $offset;
+} // p
+
+.label, label {
+  font-weight: $font-weight-primary;
+} // .label, label
+
+.strong, strong {
+  font-weight: $font-weight-primary-bold;
+} // .strong, strong
+
+.text-muted {
+  color: inherit;
+  opacity: $muted-opacity;
+} // .text-muted
+
+
+
+//
+// Text emphasis
+// =============
+
+@include text-emphasis-colored(text-primary,   $color-primary     );
+@include text-emphasis-colored(text-secondary, $color-secondary   );
+@include text-emphasis-colored(text-default,   $color-default     );
+@include text-emphasis-colored(text-success,   $color-success     );
+@include text-emphasis-colored(text-info,      $color-info        );
+@include text-emphasis-colored(text-warning,   $color-warning     );
+@include text-emphasis-colored(text-danger,    $color-danger      );
+@include text-emphasis-colored(text-light,     $color-light       );
+@include text-emphasis-colored(text-dark,      $color-text-heading);

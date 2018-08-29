@@ -1,0 +1,54 @@
+// =================================================================================================================== /
+//
+// Template Mejor - Responsive Multipurpose HTML Site Template
+// Version  1.0
+// Author   Valery Timofeev
+//
+// =================================================================================================================== /
+
+
+
+@mixin alert-colored($class, $color) {
+
+  $_color-text: md-foreground-color($color, $color-text, $color-text-light);
+  $_color-text-heading: md-foreground-color($color, $color-text-heading, $color-text-light-heading);
+
+  .#{$class} {
+
+    color: $_color-text;
+    background: $color;
+
+    .alert-title {
+      color: $_color-text-heading;
+    } // .alert-title
+
+    .alert-footer {}
+
+    &:not(.alert-alt) {
+
+      .alert-link, a,
+      .btn:not(.btn-tc) {
+
+        &, &:hover, &:focus {
+          color: $_color-text;
+        } // &:hover, &:focus
+
+      } // .alert-link, a, .btn:not(.btn-tc)
+
+    } // &:not(.alert-alt)
+
+  } // .#{$class}
+
+  .alert-alt.#{$class} {
+
+    color: $color-text;
+    background: #fff;
+    border-color: $color;
+
+    .alert-title {
+      color: $color;
+    } // .alert-title
+
+  } // .alert-alt.#{$class}
+
+} // @mixin alert-colored($class, $color)
