@@ -1,21 +1,501 @@
+  <div class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-primary alert-alt alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+                    <div class="h4 alert-title">Welcome To SilverLine!</div>
+                    <div class="alert-body">
+                        <p class="no-mb">
+                            A new version of the template is available. You can download it from the
+                            <a href="#" class="alert-link link-underline">link</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
 
-<div class="block-heading">
-	<div class="card">
-		<div class="card-block">
-			<div class="row">
-				<div class="col-md-12" style="padding-top: 2em; text-align: center">
-					<h2 class="text-info">
-						<strong>John Doe</strong>
-					</h2>
-					<p>Chemistry and BioChemistry</p>
-					<hr>
-					<div class="col-12" style="margin-top: 2em; margin-bottom: 1em;">
-						<h5>
-							{{$ctrl.item}}
-						</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+            <!-- Left column -->
+            <div class="col-xs-12 col-sm-6">
+
+                <!-- WIDGET: Current week stat -->
+                <div class="widget widget-summary-statistics">
+
+                    <!-- Widget Heading -->
+                    <div class="widget-heading bg-primary-light">
+
+                        <!-- Widget Title -->
+                        <div class="widget-title title">Current week</div>
+                        <!-- /Widget Title -->
+
+                        <!-- Widget Subtitle -->
+                        <div class="widget-subtitle">Summary statistics</div>
+                        <!-- /Widget Subtitle -->
+
+                        <!-- Widget Heading Icons -->
+                        <ul class="widget-heading-icons">
+                            <li>
+
+                                <!-- Dropdown toggle link -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon fa fa-cogs"></i>
+                                </a>
+                                <!-- /Dropdown toggle link -->
+
+                                <!-- Dropdown Menu -->
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#"><i class="icon icon-left fa fa-trash"></i> Hide</a></li>
+                                    <li><a href="#"><i class="icon icon-left fa fa-copy"></i> Duplicate</a></li>
+                                </ul>
+                                <!-- /Dropdown Menu -->
+
+                            </li>
+                        </ul>
+                        <!-- /Widget Heading Icons -->
+
+                        <!-- Chart -->
+                        <div class="canvas-holder" style="height: 160px;">
+                            <!--<canvas id="dashboard-01-current-week-stat" width="100%" height="25"></canvas>-->
+                            <canvas id="dashboard-01-current-week-stat"></canvas>
+                        </div>
+                        <!-- /Chart -->
+
+                        <!-- Widget Heading Button -->
+                        <button class="widget-heading-button btn btn-secondary btn-circle btn-waves">
+                            <i class="icon fa fa-refresh"></i>
+                        </button>
+                        <!-- /Widget Heading Button -->
+
+                    </div>
+                    <!-- Widget Heading -->
+
+                    <!-- Widget Body -->
+                    <div class="widget-body">
+                        <div class="row">
+
+                            <!-- Left Column -->
+                            <div class="col-sm-12 col-md-6">
+                                <div class="h4 text-dark mb-0p5">Summary values</div>
+                                <div class="widget-value-big">810</div>
+                                <div class="widget-value-small">
+                                    <div class="title">from</div>
+                                    <span>970</span>
+                                </div>
+                                <div class="widget-value-small">
+                                    <div class="title">change</div>
+                                    <span class="text-success">7% <i class="icon arrow_up"></i> </span>
+                                </div>
+                            </div>
+                            <!-- /Left Column -->
+
+                            <!-- Right Column -->
+                            <div class="col-sm-12 col-md-6">
+
+                                <div class="progress-title text-dark">Current week <span class="value">89%</span></div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar"
+                                         aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%;">
+                                    </div>
+                                </div>
+
+                                <div class="progress-title text-dark">Last week <span class="value">82%</span></div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-dark" role="progressbar"
+                                         aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%;">
+                                    </div>
+                                </div>
+
+                                <div class="progress-title text-dark">Target value <span class="value">98%</span></div>
+                                <div class="progress no-mb">
+                                    <div class="progress-bar progress-bar-info" role="progressbar"
+                                         aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /Right Column -->
+
+                        </div>
+                    </div>
+                    <!-- /Widget Body -->
+
+                    <!-- Widget Footer -->
+                    <div class="widget-footer">
+
+                        <div class="widget-footer-title">Information</div>
+
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <a href="#" class="link-underline">show more information</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /Widget Footer -->
+
+                </div>
+                <!-- /WIDGET: Current week stat -->
+
+            </div>
+            <!-- /Left column -->
+
+            <!-- Right column -->
+            <div class="col-xs-12 col-sm-6">
+
+                <!-- WIDGET: Tasks -->
+                <div class="widget widget-tasks">
+
+                    <!-- Widget Heading -->
+                    <div class="widget-heading">
+
+                        <!-- Widget Title -->
+                        <div class="widget-title">Active tasks</div>
+                        <!-- /Widget Title -->
+
+                        <!-- Widget controls -->
+                        <ul class="widget-heading-icons">
+                            <li>
+
+                                <!-- Dropdown toggle link -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon fa fa-cogs"></i>
+                                </a>
+                                <!-- /Dropdown toggle link -->
+
+                                <!-- Dropdown Menu -->
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#"><i class="icon icon-left fa fa-trash"></i> Hide</a></li>
+                                    <li><a href="#"><i class="icon icon-left fa fa-copy"></i> Duplicate</a></li>
+                                </ul>
+                                <!-- /Dropdown Menu -->
+
+                            </li>
+                        </ul>
+                        <!-- /Widget controls -->
+
+                    </div>
+                    <!-- /Widget Heading -->
+
+                    <!-- Widget body -->
+                    <div class="widget-body">
+
+                        <!-- Task list -->
+                        <ul class="list-group widget-tasks-list">
+
+                            <!-- Task item -->
+                            <li class="list-group-item">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-01" class="task-control">
+                                    <label for="task-01" class="task-label">
+                                        <span class="task-text">Call to Mary</span>
+                                        <span class="label label-info">today</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item task-completed">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-02" class="task-control" checked>
+                                    <label for="task-02" class="task-label">
+                                        <span class="task-text">Buy milk on the way home</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item task-completed">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-03" class="task-control" checked>
+                                    <label for="task-03" class="task-label">
+                                        <span class="task-text">Finish the previous task</span>
+                                        <span class="label label-danger">important</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-04" class="task-control">
+                                    <label for="task-04" class="task-label">
+                                        <span class="task-text">Go to home</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-05" class="task-control">
+                                    <label for="task-05" class="task-label">
+                                        <span class="task-text">Finish the current template</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-06" class="task-control">
+                                    <label for="task-06" class="task-label">
+                                        <span class="task-text">Write documentation</span>
+                                        <span class="label label-success">well</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-07" class="task-control">
+                                    <label for="task-07" class="task-label">
+                                        <span class="task-text">Make statistics block</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-08" class="task-control">
+                                    <label for="task-08" class="task-label">
+                                        <span class="task-text">Add element to this list</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                            <!-- Task item -->
+                            <li class="list-group-item task-completed">
+
+                                <!-- Task content -->
+                                <div class="md-checkbox md-checkbox-inline md-checkbox-dark">
+                                    <input type="checkbox" id="task-09" class="task-control" checked>
+                                    <label for="task-09" class="task-label">
+                                        <span class="task-text">Finish list</span>
+                                    </label>
+                                </div>
+                                <!-- /Task content -->
+
+                            </li>
+                            <!-- /Task item -->
+
+                        </ul>
+                        <!-- Task list -->
+
+                    </div>
+                    <!-- /Widget body -->
+
+                    <!-- Widget footer -->
+                    <div class="widget-footer">
+                        <div class="widget-footer-content">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-title="Create task"><i class="icon fa fa-plus"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-title="Delegate list"><i class="icon fa fa-user"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-title="Change priority"><i class="icon fa fa-snowflake-o"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-title="Update list"><i class="icon fa fa-refresh"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-title="Remove list"><i class="icon fa fa-trash-o"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Widget footer -->
+
+                </div>
+                <!-- /WIDGET: Tasks -->
+
+            </div>
+            <!-- /Right column -->
+
+        </div>
+        <!-- /ROW -->
+
+        <!-- ROW -->
+        <div class="row">
+
+            <!-- Left Column -->
+            <div class="col-xs-12 col-sm-6 col-md-8">
+
+                <!-- Widget: week load stat -->
+                <div class="widget widget-load-stat">
+                    <div class="widget-body">
+                        <div class="row">
+
+                            <!-- Left column -->
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="canvas-holder" style="height: 115px;">
+                                    <canvas id="demo-chart-cpu-usage"></canvas>
+                                </div>
+                                <div class="h4 text-center text-dark">CPU usage</div>
+                                <p class="text-muted text-center no-mb">
+                                    Contrary to popular belief
+                                    <br> Lorem Ipsum is not.
+                                </p>
+                            </div>
+                            <!-- /Left column -->
+
+                            <!-- Right column -->
+                            <div class="col-xs-12 col-sm-6 col-md-8">
+                                <div class="canvas-holder" style="height: 115px;">
+                                    <canvas id="demo-chart-line-memory-usage"></canvas>
+                                </div>
+                                <div class="h4 text-center text-dark">Memory usage</div>
+                                <p class="text-muted text-center no-mb">
+                                    There are many variations of passages of
+                                    <br> Lorem Ipsum available.
+                                </p>
+                            </div>
+                            <!-- /Right column -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /Widget: week load stat -->
+
+            </div>
+            <!-- /Left Column -->
+
+            <!-- Right Column -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+
+                <!-- CARD: Info box -->
+                <div class="info-box">
+                    <div class="info-box-left">
+                        <div class="info-box-price"><i class="icon fa fa-dollar"></i> 19</div>
+                        <div class="info-box-datetime">
+                            <span>Today</span>
+                            09:35 PM
+                        </div>
+                    </div>
+                    <div class="info-box-content">
+                        <div class="info-box-heading">
+                            <div class="title">New order</div>
+                            <div class="subtitle">Company name</div>
+                        </div>
+                        <div class="info-box-information">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="title">QTY</div>
+                                    <div class="value">4</div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="title">PRC</div>
+                                    <div class="value">$19</div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="title">TTL</div>
+                                    <div class="value">$76</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /CARD: Info box -->
+
+                <!-- CARD: Info box -->
+                <div class="info-box info-box-primary">
+                    <div class="info-box-left">
+                        <div class="info-box-price"><i class="icon fa fa-dollar"></i> 19</div>
+                        <div class="info-box-datetime">
+                            <span>Today</span>
+                            09:35 PM
+                        </div>
+                    </div>
+                    <div class="info-box-content">
+                        <div class="info-box-heading">
+                            <div class="title">New order</div>
+                            <div class="subtitle">Company name</div>
+                        </div>
+                        <div class="info-box-information">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="title">QTY</div>
+                                    <div class="value">4</div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="title">PRC</div>
+                                    <div class="value">$19</div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="title">TTL</div>
+                                    <div class="value">$76</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /CARD: Info box -->
+
+                <!-- CARD: Info box --
+                <div class="info-box info-box-info">
+                    <div class="info-box-left">
+                        <div class="info-box-price"><i class="icon fa fa-dollar"></i> 19</div>
+                        <div class="info-box-datetime">
+                            <span>Today</span>
+                            09:35 PM
+                        </div>
+                    </div>
+                    <div class="info-box-content">
+                        <div class="info-box-heading">
+                            <div class="title">New order</div>
+                            <div class="subtitle">Company name</div>
+                        </div>
+                        <div class="info-box-information">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="title">QTY</div>
+                                    <div class="value">4</div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="title">PRC</div>
+                                    <div class="value">$19</div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="title">TTL</div>
+                                    <div class="value">$76</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /CARD: Info box -->
+               </div>
